@@ -5,11 +5,23 @@ using UnityEngine.UIElements;
 
 public class Character : MonoBehaviour
 {
+    enum State
+    {
+        Idle,
+        Walk,
+        Attack,
+        Trace
+    }
 
+    [SerializeField] private GameObject Target;
+    
+    
     [SerializeField] private float Chspeed = 5.0f;
     [SerializeField] private float horizontal;
 
     [SerializeField] private float groundRadius = 0.5f;
+
+
 
     private SpriteRenderer srr;
     private Rigidbody2D rb;
