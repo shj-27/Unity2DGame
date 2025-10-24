@@ -1,0 +1,3779 @@
+fileFormatVersion: 2
+guid: 64508f9f7861ab44faeb3d76376966ac
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: SHADOW Series - The Blind Huntress_Frame_0
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 282
+      width: 15
+      height: 39
+    spriteID: e7db1a25ad8c8c34aa42ac775fd95685
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 493, y: 282}
+  - name: SHADOW Series - The Blind Huntress_Frame_1
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 195
+      width: 15
+      height: 39
+    spriteID: f11b7f14fec0f4e4bba2985acf1c278f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 493, y: 195}
+  - name: SHADOW Series - The Blind Huntress_Frame_2
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 9e87966a1aee18e44829bc52f3a2cb4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_3
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 102
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 99458c346ede0f14cacd39ca69a687c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 102, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_4
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 53505464691654c4da032d5bcfb56c7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 125, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_5
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 457
+      y: 331
+      width: 15
+      height: 38
+    spriteID: 1c3cf38b08009c24a82eda3f597a384f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 457, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_6
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 331
+      width: 15
+      height: 38
+    spriteID: 99d5919f572886c44a1c07a0f0930540
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 480, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_7
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 425
+      width: 15
+      height: 38
+    spriteID: c49dcd0d231f01d4981581503dc380e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_8
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 27
+      y: 425
+      width: 15
+      height: 38
+    spriteID: 26dae0a9703810e4f8fd129a485a04cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 27, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_9
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 425
+      width: 15
+      height: 38
+    spriteID: dd859510d66a9c049b21bfe8189150eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_10
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 425
+      width: 15
+      height: 38
+    spriteID: 3ca2739bb7bc72a4b98f064ae975b376
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_11
+    originalName: 
+    pivot: {x: 0.57142854, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 303
+      y: 425
+      width: 14
+      height: 38
+    spriteID: 6d8266a34edd7944d9452a4bcb1d9556
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 303, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_12
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 07bdc1b5ebe6fc04ebbc48de9856a0da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_13
+    originalName: 
+    pivot: {x: 0.6249999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 361
+      y: 331
+      width: 16
+      height: 38
+    spriteID: 38e3f1a77520dd041a22ed890ae656e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 361, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_14
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 425
+      width: 15
+      height: 38
+    spriteID: c2c0528415a89604cba4f6ae72713c69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_15
+    originalName: 
+    pivot: {x: 0.57142854, y: -1.2894737}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 325
+      y: 425
+      width: 14
+      height: 38
+    spriteID: 6ba37f5897403f14a832c6ea23061d7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 325, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_16
+    originalName: 
+    pivot: {x: 0.6249999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 331
+      width: 16
+      height: 38
+    spriteID: a53728ce6e9e33649b5d4b91f03e9068
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_17
+    originalName: 
+    pivot: {x: 0.6249999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 409
+      y: 331
+      width: 16
+      height: 38
+    spriteID: b0faf837d97eb1742bace425c0f21480
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 409, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_18
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 425
+      width: 15
+      height: 38
+    spriteID: 0009b76aff775e04b8cfd705e0fd6f27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_19
+    originalName: 
+    pivot: {x: 0.57142854, y: -1.2894737}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 347
+      y: 425
+      width: 14
+      height: 38
+    spriteID: 3cbe348f2342335419a0e5ea561607a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 347, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_20
+    originalName: 
+    pivot: {x: 0.6249999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 433
+      y: 331
+      width: 16
+      height: 38
+    spriteID: 15f14e2c951fb7840a6f968d8e9e5834
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 433, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_21
+    originalName: 
+    pivot: {x: 0.5333333, y: -1.3513514}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 471
+      width: 15
+      height: 37
+    spriteID: 307adbbcc03c5e5458e29eab7438729f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_22
+    originalName: 
+    pivot: {x: 0.5333333, y: -1.388889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 471
+      width: 15
+      height: 36
+    spriteID: 84c3eb4f8d796d449975de2089121c75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: -1.388889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 303
+      y: 471
+      width: 14
+      height: 36
+    spriteID: 189314802083797409c0736c76c9cde4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 303, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: -1.388889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 325
+      y: 471
+      width: 14
+      height: 36
+    spriteID: 6b4d419c61e0e4248a65a69d814696fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 325, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_25
+    originalName: 
+    pivot: {x: 0.5333333, y: -1.3513514}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 27
+      y: 471
+      width: 15
+      height: 37
+    spriteID: 09fafb29163c8ca4e8384c761db91dfa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 27, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_26
+    originalName: 
+    pivot: {x: 0.58823514, y: -1.388889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 336
+      y: 331
+      width: 17
+      height: 36
+    spriteID: 0d2bf59a9f6ed3e4f957ddad7a4c7ec6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 336, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_27
+    originalName: 
+    pivot: {x: 0.6315791, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 385
+      y: 282
+      width: 19
+      height: 38
+    spriteID: d64a23c8a60a952459551d495f7c6f54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 385, y: 282}
+  - name: SHADOW Series - The Blind Huntress_Frame_28
+    originalName: 
+    pivot: {x: 0.6470586, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 331
+      width: 17
+      height: 38
+    spriteID: fb5525dfc0db79a41b89848756088e4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_29
+    originalName: 
+    pivot: {x: 0.6315791, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 412
+      y: 282
+      width: 19
+      height: 38
+    spriteID: dd3b8154c839ee3419e0e15ffff068a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 412, y: 282}
+  - name: SHADOW Series - The Blind Huntress_Frame_30
+    originalName: 
+    pivot: {x: 0.6500001, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 484
+      y: 92
+      width: 20
+      height: 38
+    spriteID: 8c548843b1075f24684274d465b541c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 484, y: 92}
+  - name: SHADOW Series - The Blind Huntress_Frame_31
+    originalName: 
+    pivot: {x: 0.6315791, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 439
+      y: 282
+      width: 19
+      height: 38
+    spriteID: 5195789be135da94e88773f2c5360316
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 439, y: 282}
+  - name: SHADOW Series - The Blind Huntress_Frame_32
+    originalName: 
+    pivot: {x: 0.5714287, y: -1.6451613}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 331
+      width: 21
+      height: 31
+    spriteID: ce33cb8caf5de8d4b8832496b1c7caf1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_33
+    originalName: 
+    pivot: {x: 0.54999983, y: -1.6451613}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 331
+      width: 20
+      height: 31
+    spriteID: 81fcb0b6de0f9d745bdda652264bb25f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_34
+    originalName: 
+    pivot: {x: 0.54999983, y: -1.6451613}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 280
+      y: 331
+      width: 20
+      height: 31
+    spriteID: f135d5ccb159ea749acc0782337d298e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 280, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_35
+    originalName: 
+    pivot: {x: 0.54999983, y: -1.6451613}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 308
+      y: 331
+      width: 20
+      height: 31
+    spriteID: cc30b6b78670bd34794ea83ad2a2bb92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 308, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_36
+    originalName: 
+    pivot: {x: 1.5333333, y: -0.23076923}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 342d5efb895b6db4eaae7113a8c9cdf9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 171, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_37
+    originalName: 
+    pivot: {x: 1.1999998, y: -1.0555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 471
+      width: 15
+      height: 36
+    spriteID: 8d1843ae5235438448b48bd410394046
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_38
+    originalName: 
+    pivot: {x: 1, y: -1.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 347
+      y: 471
+      width: 14
+      height: 36
+    spriteID: a3f8ac1d5fdd00c4f913e316873bed14
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 347, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_39
+    originalName: 
+    pivot: {x: 0.85714304, y: -1.388889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 211
+      y: 471
+      width: 14
+      height: 36
+    spriteID: b4492f40123763f4cbe6f5bc0510c642
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 211, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_40
+    originalName: 
+    pivot: {x: 0.7333331, y: -1.4166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 471
+      width: 15
+      height: 36
+    spriteID: e9b6a86fa399abd49a3d5f320cb27a8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 119, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_41
+    originalName: 
+    pivot: {x: 0.58823514, y: -1.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 377
+      width: 17
+      height: 40
+    spriteID: e068ee739be93014abb9efa273e0bc66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_42
+    originalName: 
+    pivot: {x: 0.46428576, y: -0.6527778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 152
+      y: 250
+      width: 28
+      height: 72
+    spriteID: dd8b48af85839954b952edc814a23982
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 152, y: 250}
+  - name: SHADOW Series - The Blind Huntress_Frame_43
+    originalName: 
+    pivot: {x: 0.44827592, y: -0.69014084}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 41
+      y: 250
+      width: 29
+      height: 71
+    spriteID: e4ab0be42a780c84dac2034a67653527
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 41, y: 250}
+  - name: SHADOW Series - The Blind Huntress_Frame_44
+    originalName: 
+    pivot: {x: 0.44827592, y: -0.70422536}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 250
+      width: 29
+      height: 71
+    spriteID: eee0a0bd81684d547bbe08112eb71338
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 250}
+  - name: SHADOW Series - The Blind Huntress_Frame_45
+    originalName: 
+    pivot: {x: 0.6470586, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 331
+      width: 17
+      height: 38
+    spriteID: 34552a3aa7285894992442fa710fb0d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_46
+    originalName: 
+    pivot: {x: 0.6315791, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 466
+      y: 282
+      width: 19
+      height: 38
+    spriteID: 8caa05e56f472f94cb688ed20e58aba8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 466, y: 282}
+  - name: SHADOW Series - The Blind Huntress_Frame_47
+    originalName: 
+    pivot: {x: 0.6500001, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 282
+      width: 20
+      height: 38
+    spriteID: aedd8e11752d7fb40a55c8daa101f0b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 282}
+  - name: SHADOW Series - The Blind Huntress_Frame_48
+    originalName: 
+    pivot: {x: 0.6315791, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 331
+      width: 19
+      height: 38
+    spriteID: 520a82087fe31ae4cab543c841e32dc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_49
+    originalName: 
+    pivot: {x: 1.7500001, y: -2.4285715}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 413
+      y: 442
+      width: 12
+      height: 14
+    spriteID: 2a50e20f4b5a6bc4e8750a50f1c460fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 413, y: 442}
+  - name: SHADOW Series - The Blind Huntress_Frame_50
+    originalName: 
+    pivot: {x: 1.1999998, y: -1.0555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 471
+      width: 15
+      height: 36
+    spriteID: f2d7fb2a5f11d2e4586be9b2a3663839
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_51
+    originalName: 
+    pivot: {x: 1, y: -1.2777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 234
+      y: 471
+      width: 14
+      height: 36
+    spriteID: f55dafc7b1b0a90479aa1dbfc584a374
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 234, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_52
+    originalName: 
+    pivot: {x: 0.85714304, y: -1.388889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 257
+      y: 471
+      width: 14
+      height: 36
+    spriteID: b74c8f2d6f84b9941aeaa159357eb576
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 257, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_53
+    originalName: 
+    pivot: {x: 0.7333331, y: -1.4166666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 165
+      y: 471
+      width: 15
+      height: 36
+    spriteID: 7ce5d85879d80674e936bb5ab1f128a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 165, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_54
+    originalName: 
+    pivot: {x: 0.6111109, y: -1.3783784}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 147
+      y: 331
+      width: 18
+      height: 37
+    spriteID: f5a0ab4f5fdf54040a9ba5ac8122820b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 147, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_55
+    originalName: 
+    pivot: {x: 0.3478261, y: -0.23611112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 250
+      width: 23
+      height: 72
+    spriteID: 67cb65304cab2bd4388ec2501de418ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 288, y: 250}
+  - name: SHADOW Series - The Blind Huntress_Frame_56
+    originalName: 
+    pivot: {x: 0.3333333, y: -0.22222222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 250
+      width: 24
+      height: 72
+    spriteID: 4e561edcde4ca934c8f9005e24817b6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 224, y: 250}
+  - name: SHADOW Series - The Blind Huntress_Frame_57
+    originalName: 
+    pivot: {x: 0.3333333, y: -0.20833333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 256
+      y: 250
+      width: 24
+      height: 72
+    spriteID: 91d708f8c645aeb4eb35839a67758200
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 256, y: 250}
+  - name: SHADOW Series - The Blind Huntress_Frame_58
+    originalName: 
+    pivot: {x: 0.5333333, y: -1.3513514}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 471
+      width: 15
+      height: 37
+    spriteID: 0d11d1a1dd91e6d40a36bc05a7950672
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_59
+    originalName: 
+    pivot: {x: 0.5333333, y: -1.388889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 471
+      width: 15
+      height: 36
+    spriteID: 6a306e21917e7604ba66a220ea314926
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: -1.388889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 280
+      y: 471
+      width: 14
+      height: 36
+    spriteID: d3c3f298410bd774e90a356348fbd8e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 280, y: 471}
+  - name: SHADOW Series - The Blind Huntress_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: -1.388889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 391
+      y: 425
+      width: 14
+      height: 36
+    spriteID: 93418e339fa815b4ab8379300a22737d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 391, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_62
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 425
+      width: 15
+      height: 38
+    spriteID: ccc1bbd1f1cf679478b24c82fd22da44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_63
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 165
+      y: 425
+      width: 15
+      height: 38
+    spriteID: 5d8d3779954cace419a6c077946ed675
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 165, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_64
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 425
+      width: 15
+      height: 38
+    spriteID: 3ed396d1ed9bbe64f9cebd0ba0e9c034
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_65
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 211
+      y: 425
+      width: 15
+      height: 38
+    spriteID: ba3fe647f626bc6408a24509d6e43226
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 211, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_66
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 234
+      y: 425
+      width: 15
+      height: 38
+    spriteID: dcc6a73d722fdb644934759bc3085f64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 234, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_67
+    originalName: 
+    pivot: {x: 0.57142854, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 369
+      y: 425
+      width: 14
+      height: 38
+    spriteID: ab46aff5695423248a17c49cb1d15cca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 369, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_68
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 70691bc11b0bb294e9b3bcbe4283b53e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_69
+    originalName: 
+    pivot: {x: 0.6470586, y: -1.1750001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 377
+      width: 17
+      height: 40
+    spriteID: c0b72d96a749e21428fae343fcdaeb0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_70
+    originalName: 
+    pivot: {x: 0.5, y: -0.6388889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 250
+      width: 28
+      height: 72
+    spriteID: 60baaa98f3dade64189488ce06b2ea53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 250}
+  - name: SHADOW Series - The Blind Huntress_Frame_71
+    originalName: 
+    pivot: {x: 0.48275864, y: -0.6760563}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 115
+      y: 250
+      width: 29
+      height: 71
+    spriteID: 5f360eceee522b743ad6579a686ddcf7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 115, y: 250}
+  - name: SHADOW Series - The Blind Huntress_Frame_72
+    originalName: 
+    pivot: {x: 0.48275864, y: -0.65753424}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 250
+      width: 29
+      height: 73
+    spriteID: ec4d832247ec8df49b3b124f30f70728
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 250}
+  - name: SHADOW Series - The Blind Huntress_Frame_73
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 217
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 84641137a60b4034dab8dfccb44e7f30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 217, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_74
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 240
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 26b670be0476b8341b4cf33f02ecc82c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 240, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_75
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 78ca87a0896ae9843940fbed2ee7c7d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 263, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_76
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 286
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 554340d54a4918e4783fb0c11ae45b35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 286, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_77
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 257
+      y: 425
+      width: 15
+      height: 38
+    spriteID: 1dfb745e03371d84eb17bdaa589960f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 257, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_78
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 309
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 514504fadcfffdb40a775bb2a5814841
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 309, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_79
+    originalName: 
+    pivot: {x: 0.4761904, y: -1.4545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 486
+      y: 50
+      width: 21
+      height: 33
+    spriteID: a0b717e7ef3017746a21f83801d9aa21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 486, y: 50}
+  - name: SHADOW Series - The Blind Huntress_Frame_80
+    originalName: 
+    pivot: {x: 0.12371136, y: -1.4545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 331
+      y: 50
+      width: 97
+      height: 33
+    spriteID: 24a47b86dedac0241890a46453b070fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 331, y: 50}
+  - name: SHADOW Series - The Blind Huntress_Frame_81
+    originalName: 
+    pivot: {x: -0.1333334, y: -1.4545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 146
+      width: 75
+      height: 33
+    spriteID: 5d384d2670be07540969b4912cb51388
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 146}
+  - name: SHADOW Series - The Blind Huntress_Frame_82
+    originalName: 
+    pivot: {x: 0.029702943, y: -1.3142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 210
+      y: 4
+      width: 101
+      height: 35
+    spriteID: cff40eaf1c900704dbfba928b132ff6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 210, y: 4}
+  - name: SHADOW Series - The Blind Huntress_Frame_83
+    originalName: 
+    pivot: {x: 0.038834985, y: -1.4117647}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 50
+      width: 103
+      height: 34
+    spriteID: 8edb84d51e01faf42bcdfc82eb945da1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 50}
+  - name: SHADOW Series - The Blind Huntress_Frame_84
+    originalName: 
+    pivot: {x: -2.2424242, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 334
+      y: 146
+      width: 33
+      height: 38
+    spriteID: 2afecb23fd66f9442ad49d5a035665ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 334, y: 146}
+  - name: SHADOW Series - The Blind Huntress_Frame_85
+    originalName: 
+    pivot: {x: -0.4594594, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 92
+      width: 74
+      height: 46
+    spriteID: 03b2987f07ac1f84f9d9264cba0538d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 92}
+  - name: SHADOW Series - The Blind Huntress_Frame_86
+    originalName: 
+    pivot: {x: -0.55555546, y: -0.97872335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 195
+      width: 63
+      height: 47
+    spriteID: 17ddda7c88eb5e8468cce6a9e04038bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 195}
+  - name: SHADOW Series - The Blind Huntress_Frame_87
+    originalName: 
+    pivot: {x: -0.55555546, y: -0.99999994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 195
+      width: 63
+      height: 47
+    spriteID: 8bbb04db91198aa4aa2cbe3d3effb357
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 75, y: 195}
+  - name: SHADOW Series - The Blind Huntress_Frame_88
+    originalName: 
+    pivot: {x: -1.5882355, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 195
+      width: 34
+      height: 39
+    spriteID: 049815fb42d537242b037d617550e55b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 195}
+  - name: SHADOW Series - The Blind Huntress_Frame_89
+    originalName: 
+    pivot: {x: -3.2380955, y: -1.4545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 31
+      y: 331
+      width: 21
+      height: 33
+    spriteID: 281814f9dc3cc124abd06ab8764545e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 31, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_90
+    originalName: 
+    pivot: {x: 0.06185568, y: -1.4545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 92
+      width: 97
+      height: 33
+    spriteID: 06a2a37762c31854aaa81d8d1c407bad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 92}
+  - name: SHADOW Series - The Blind Huntress_Frame_91
+    originalName: 
+    pivot: {x: 0.08000002, y: -1.4545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 251
+      y: 146
+      width: 75
+      height: 33
+    spriteID: c4b317c0c43f227468607557e5d439d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 251, y: 146}
+  - name: SHADOW Series - The Blind Huntress_Frame_92
+    originalName: 
+    pivot: {x: 0.123287655, y: -1.1219512}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 361
+      y: 92
+      width: 73
+      height: 41
+    spriteID: 5e20e51e3f44186489ab40875ebbaea0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 361, y: 92}
+  - name: SHADOW Series - The Blind Huntress_Frame_93
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 377
+      width: 15
+      height: 39
+    spriteID: e8cfaf2ddac05b649899a474a3ed3587
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_94
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 355
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 7ab1d48b3e8881c418604cd7e111cb33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 355, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_95
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 378
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 005449b7e89ae0a40abb6cd581803c38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 378, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_96
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 401
+      y: 377
+      width: 15
+      height: 39
+    spriteID: 4fbc42fff306ee642b5ba6ef5a98159c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 401, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_97
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 280
+      y: 425
+      width: 15
+      height: 38
+    spriteID: 26376ab02dea1ff4baad7acc8d665a07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 280, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_98
+    originalName: 
+    pivot: {x: 0.18811885, y: -1.3142858}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 4
+      width: 101
+      height: 35
+    spriteID: 979499e7faee6d3448b0ce419bf6683f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 4}
+  - name: SHADOW Series - The Blind Huntress_Frame_99
+    originalName: 
+    pivot: {x: 0.1941748, y: -1.4117647}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 115
+      y: 50
+      width: 103
+      height: 34
+    spriteID: 0e52fca188bd8f84d82a4e0bd916a9d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 115, y: 50}
+  - name: SHADOW Series - The Blind Huntress_Frame_100
+    originalName: 
+    pivot: {x: 0.13402063, y: -1.4117647}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 50
+      width: 97
+      height: 34
+    spriteID: b4d0272b0c485484582a918ea63cf068
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 50}
+  - name: SHADOW Series - The Blind Huntress_Frame_101
+    originalName: 
+    pivot: {x: 0.84848493, y: -1.2631578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 375
+      y: 146
+      width: 33
+      height: 38
+    spriteID: 2337b01b192e87844aa17eb389efb3b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 375, y: 146}
+  - name: SHADOW Series - The Blind Huntress_Frame_102
+    originalName: 
+    pivot: {x: 0.3918919, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 92
+      width: 74
+      height: 46
+    spriteID: 6e513dd9160f3014e803f818f9c0ad28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 92}
+  - name: SHADOW Series - The Blind Huntress_Frame_103
+    originalName: 
+    pivot: {x: 0.30158734, y: -0.97872335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 146
+      y: 195
+      width: 63
+      height: 47
+    spriteID: 3241bef979d41114f82a58722c90f157
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 146, y: 195}
+  - name: SHADOW Series - The Blind Huntress_Frame_104
+    originalName: 
+    pivot: {x: 0.30158734, y: -0.99999994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 217
+      y: 195
+      width: 63
+      height: 47
+    spriteID: 17875ccfeff8790409605902b9a9caef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 217, y: 195}
+  - name: SHADOW Series - The Blind Huntress_Frame_105
+    originalName: 
+    pivot: {x: 0.26470584, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 442
+      y: 92
+      width: 34
+      height: 39
+    spriteID: 787f183f73d1aab4d94935a25350f9a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 442, y: 92}
+  - name: SHADOW Series - The Blind Huntress_Frame_106
+    originalName: 
+    pivot: {x: 0.4761904, y: -1.4545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 331
+      width: 21
+      height: 33
+    spriteID: 99a4f26efc537194babc36be9a8ba82a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_107
+    originalName: 
+    pivot: {x: 0.06315791, y: -1.2105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 95
+      height: 38
+    spriteID: 9f3197ff332d3f445b939303eb387d45
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: SHADOW Series - The Blind Huntress_Frame_108
+    originalName: 
+    pivot: {x: -0.06249994, y: -1.2105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 428
+      y: 4
+      width: 80
+      height: 38
+    spriteID: 4ca01de36a334824990c3567045d3340
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 428, y: 4}
+  - name: SHADOW Series - The Blind Huntress_Frame_109
+    originalName: 
+    pivot: {x: -0.1333334, y: -1.3333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 368
+      y: 195
+      width: 75
+      height: 36
+    spriteID: cff5e6a4e59e9d64a8714e1a1ff09f11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 368, y: 195}
+  - name: SHADOW Series - The Blind Huntress_Frame_110
+    originalName: 
+    pivot: {x: -0.20833333, y: -1.1219512}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 195
+      width: 72
+      height: 41
+    spriteID: a96fe268d975e1b40ac5d1bea0d0c476
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 288, y: 195}
+  - name: SHADOW Series - The Blind Huntress_Frame_111
+    originalName: 
+    pivot: {x: -3.2380955, y: -1.4545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 331
+      width: 21
+      height: 33
+    spriteID: 529cfd8ebe679854cb83f0d38995cf5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_112
+    originalName: 
+    pivot: {x: 0.10526313, y: -1.2105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 107
+      y: 4
+      width: 95
+      height: 38
+    spriteID: e05d1bd80371b854c88f99ce711c9060
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 107, y: 4}
+  - name: SHADOW Series - The Blind Huntress_Frame_113
+    originalName: 
+    pivot: {x: 0.07500002, y: -1.2105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 273
+      y: 92
+      width: 80
+      height: 38
+    spriteID: 6084052070d6ad6449b8258577a339bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 273, y: 92}
+  - name: SHADOW Series - The Blind Huntress_Frame_114
+    originalName: 
+    pivot: {x: 0.08000002, y: -1.3333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 146
+      width: 75
+      height: 36
+    spriteID: 790609bbeb0d5c14e868f3e6b1edd9e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 146}
+  - name: SHADOW Series - The Blind Huntress_Frame_115
+    originalName: 
+    pivot: {x: 0.123287655, y: -1.1219512}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 146
+      width: 73
+      height: 41
+    spriteID: 60980278ec52c3042ab617d0c87a2b97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 146}
+  - name: SHADOW Series - The Blind Huntress_Frame_116
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 424
+      y: 377
+      width: 15
+      height: 39
+    spriteID: a65cc31fd622c7848a3b3cd48dc2b088
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 424, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_117
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 447
+      y: 377
+      width: 15
+      height: 39
+    spriteID: f9f92f369f2b9854d8e2599650870c38
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 447, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_118
+    originalName: 
+    pivot: {x: 0.6470586, y: -1.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 377
+      width: 17
+      height: 40
+    spriteID: 2e2a9cc19da215442be0c7e9a08e4f98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_119
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 470
+      y: 377
+      width: 15
+      height: 39
+    spriteID: bfd9e9bb403cdd2418ed0919ef7c7588
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 470, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_120
+    originalName: 
+    pivot: {x: 0.5999999, y: -1.2307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 377
+      width: 15
+      height: 39
+    spriteID: c1dae8f95d1c3144ab6fc4a948a5d13d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 493, y: 377}
+  - name: SHADOW Series - The Blind Huntress_Frame_121
+    originalName: 
+    pivot: {x: 0.4761904, y: -1.4545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 118
+      y: 331
+      width: 21
+      height: 33
+    spriteID: 31e3748637eae1042bae231450e4b123
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 118, y: 331}
+  - name: SHADOW Series - The Blind Huntress_Frame_122
+    originalName: 
+    pivot: {x: 0.13333344, y: -1.92}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 347
+      y: 282
+      width: 30
+      height: 25
+    spriteID: b0a6211326f51264497227f5c021bf80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 347, y: 282}
+  - name: SHADOW Series - The Blind Huntress_Frame_123
+    originalName: 
+    pivot: {x: -0.0285714, y: -2.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 363
+      y: 250
+      width: 35
+      height: 20
+    spriteID: 1fbb45516a3c6274984fcfd3db10ee29
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 363, y: 250}
+  - name: SHADOW Series - The Blind Huntress_Frame_124
+    originalName: 
+    pivot: {x: -0.0285714, y: -5.3333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 413
+      y: 425
+      width: 35
+      height: 9
+    spriteID: 33b835600c1578d43b7156253260dbb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 413, y: 425}
+  - name: SHADOW Series - The Blind Huntress_Frame_125
+    originalName: 
+    pivot: {x: -0.0555555, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 250
+      width: 36
+      height: 24
+    spriteID: 538300ec8998d2443b15f768e215a4f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 319, y: 250}
+  - name: SHADOW Series - The Blind Huntress_Frame_126
+    originalName: 
+    pivot: {x: -0.049999952, y: -1.92}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 466
+      y: 146
+      width: 40
+      height: 25
+    spriteID: 76ef98f9fbd1e2a41b6b046edb5119a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 466, y: 146}
+  - name: SHADOW Series - The Blind Huntress_Frame_127
+    originalName: 
+    pivot: {x: -0.047619004, y: -1.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 50
+      width: 42
+      height: 27
+    spriteID: 27423158bc68e0d40bf13de60042d068
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 50}
+  - name: SHADOW Series - The Blind Huntress_Frame_128
+    originalName: 
+    pivot: {x: -0.047619004, y: -1.7777778}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 146
+      width: 42
+      height: 27
+    spriteID: 4fdfbf372c692b54d8fb5fc57fa8befe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 146}
+  - name: SHADOW Series - The Blind Huntress_Frame_129
+    originalName: 
+    pivot: {x: -0.047619004, y: -8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 181
+      width: 42
+      height: 6
+    spriteID: 7a3846b4591474347993f3a07ccbebcf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 181}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1758157762
+    name: SHADOW Series - The Blind Huntress
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: SHADOW Series - The Blind Huntress_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: e7db1a25ad8c8c34aa42ac775fd95685
+    - name: SHADOW Series - The Blind Huntress_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: f11b7f14fec0f4e4bba2985acf1c278f
+    - name: SHADOW Series - The Blind Huntress_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 9e87966a1aee18e44829bc52f3a2cb4f
+    - name: SHADOW Series - The Blind Huntress_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 99458c346ede0f14cacd39ca69a687c6
+    - name: SHADOW Series - The Blind Huntress_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 53505464691654c4da032d5bcfb56c7c
+    - name: SHADOW Series - The Blind Huntress_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: 1c3cf38b08009c24a82eda3f597a384f
+    - name: SHADOW Series - The Blind Huntress_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: 99d5919f572886c44a1c07a0f0930540
+    - name: SHADOW Series - The Blind Huntress_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: c49dcd0d231f01d4981581503dc380e7
+    - name: SHADOW Series - The Blind Huntress_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: 26dae0a9703810e4f8fd129a485a04cf
+    - name: SHADOW Series - The Blind Huntress_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: dd859510d66a9c049b21bfe8189150eb
+    - name: SHADOW Series - The Blind Huntress_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: 3ca2739bb7bc72a4b98f064ae975b376
+    - name: SHADOW Series - The Blind Huntress_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 112
+        y: 48
+        width: 14
+        height: 38
+      spriteId: 6d8266a34edd7944d9452a4bcb1d9556
+    - name: SHADOW Series - The Blind Huntress_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 07bdc1b5ebe6fc04ebbc48de9856a0da
+    - name: SHADOW Series - The Blind Huntress_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 110
+        y: 48
+        width: 16
+        height: 38
+      spriteId: 38e3f1a77520dd041a22ed890ae656e9
+    - name: SHADOW Series - The Blind Huntress_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: c2c0528415a89604cba4f6ae72713c69
+    - name: SHADOW Series - The Blind Huntress_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 112
+        y: 49
+        width: 14
+        height: 38
+      spriteId: 6ba37f5897403f14a832c6ea23061d7f
+    - name: SHADOW Series - The Blind Huntress_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 110
+        y: 48
+        width: 16
+        height: 38
+      spriteId: a53728ce6e9e33649b5d4b91f03e9068
+    - name: SHADOW Series - The Blind Huntress_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 110
+        y: 48
+        width: 16
+        height: 38
+      spriteId: b0faf837d97eb1742bace425c0f21480
+    - name: SHADOW Series - The Blind Huntress_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: 0009b76aff775e04b8cfd705e0fd6f27
+    - name: SHADOW Series - The Blind Huntress_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 112
+        y: 49
+        width: 14
+        height: 38
+      spriteId: 3cbe348f2342335419a0e5ea561607a2
+    - name: SHADOW Series - The Blind Huntress_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 110
+        y: 48
+        width: 16
+        height: 38
+      spriteId: 15f14e2c951fb7840a6f968d8e9e5834
+    - name: SHADOW Series - The Blind Huntress_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 112
+        y: 50
+        width: 15
+        height: 37
+      spriteId: 307adbbcc03c5e5458e29eab7438729f
+    - name: SHADOW Series - The Blind Huntress_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 112
+        y: 50
+        width: 15
+        height: 36
+      spriteId: 84c3eb4f8d796d449975de2089121c75
+    - name: SHADOW Series - The Blind Huntress_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 113
+        y: 50
+        width: 14
+        height: 36
+      spriteId: 189314802083797409c0736c76c9cde4
+    - name: SHADOW Series - The Blind Huntress_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 113
+        y: 50
+        width: 14
+        height: 36
+      spriteId: 6b4d419c61e0e4248a65a69d814696fd
+    - name: SHADOW Series - The Blind Huntress_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 112
+        y: 50
+        width: 15
+        height: 37
+      spriteId: 09fafb29163c8ca4e8384c761db91dfa
+    - name: SHADOW Series - The Blind Huntress_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 110
+        y: 50
+        width: 17
+        height: 36
+      spriteId: 0d2bf59a9f6ed3e4f957ddad7a4c7ec6
+    - name: SHADOW Series - The Blind Huntress_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 108
+        y: 48
+        width: 19
+        height: 38
+      spriteId: d64a23c8a60a952459551d495f7c6f54
+    - name: SHADOW Series - The Blind Huntress_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 109
+        y: 48
+        width: 17
+        height: 38
+      spriteId: fb5525dfc0db79a41b89848756088e4b
+    - name: SHADOW Series - The Blind Huntress_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 108
+        y: 48
+        width: 19
+        height: 38
+      spriteId: dd3b8154c839ee3419e0e15ffff068a8
+    - name: SHADOW Series - The Blind Huntress_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 107
+        y: 48
+        width: 20
+        height: 38
+      spriteId: 8c548843b1075f24684274d465b541c1
+    - name: SHADOW Series - The Blind Huntress_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 108
+        y: 48
+        width: 19
+        height: 38
+      spriteId: 5195789be135da94e88773f2c5360316
+    - name: SHADOW Series - The Blind Huntress_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 108
+        y: 51
+        width: 21
+        height: 31
+      spriteId: ce33cb8caf5de8d4b8832496b1c7caf1
+    - name: SHADOW Series - The Blind Huntress_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 109
+        y: 51
+        width: 20
+        height: 31
+      spriteId: 81fcb0b6de0f9d745bdda652264bb25f
+    - name: SHADOW Series - The Blind Huntress_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 109
+        y: 51
+        width: 20
+        height: 31
+      spriteId: f135d5ccb159ea749acc0782337d298e
+    - name: SHADOW Series - The Blind Huntress_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 109
+        y: 51
+        width: 20
+        height: 31
+      spriteId: cc30b6b78670bd34794ea83ad2a2bb92
+    - name: SHADOW Series - The Blind Huntress_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 97
+        y: 9
+        width: 15
+        height: 39
+      spriteId: 342d5efb895b6db4eaae7113a8c9cdf9
+    - name: SHADOW Series - The Blind Huntress_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 102
+        y: 38
+        width: 15
+        height: 36
+      spriteId: 8d1843ae5235438448b48bd410394046
+    - name: SHADOW Series - The Blind Huntress_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 106
+        y: 46
+        width: 14
+        height: 36
+      spriteId: a3f8ac1d5fdd00c4f913e316873bed14
+    - name: SHADOW Series - The Blind Huntress_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 108
+        y: 50
+        width: 14
+        height: 36
+      spriteId: b4492f40123763f4cbe6f5bc0510c642
+    - name: SHADOW Series - The Blind Huntress_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 109
+        y: 51
+        width: 15
+        height: 36
+      spriteId: e9b6a86fa399abd49a3d5f320cb27a8d
+    - name: SHADOW Series - The Blind Huntress_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 110
+        y: 48
+        width: 17
+        height: 40
+      spriteId: e068ee739be93014abb9efa273e0bc66
+    - name: SHADOW Series - The Blind Huntress_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 107
+        y: 47
+        width: 28
+        height: 72
+      spriteId: dd8b48af85839954b952edc814a23982
+    - name: SHADOW Series - The Blind Huntress_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 107
+        y: 49
+        width: 29
+        height: 71
+      spriteId: e4ab0be42a780c84dac2034a67653527
+    - name: SHADOW Series - The Blind Huntress_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 107
+        y: 50
+        width: 29
+        height: 71
+      spriteId: eee0a0bd81684d547bbe08112eb71338
+    - name: SHADOW Series - The Blind Huntress_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 109
+        y: 48
+        width: 17
+        height: 38
+      spriteId: 34552a3aa7285894992442fa710fb0d4
+    - name: SHADOW Series - The Blind Huntress_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 108
+        y: 48
+        width: 19
+        height: 38
+      spriteId: 8caa05e56f472f94cb688ed20e58aba8
+    - name: SHADOW Series - The Blind Huntress_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 107
+        y: 48
+        width: 20
+        height: 38
+      spriteId: aedd8e11752d7fb40a55c8daa101f0b0
+    - name: SHADOW Series - The Blind Huntress_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 108
+        y: 48
+        width: 19
+        height: 38
+      spriteId: 520a82087fe31ae4cab543c841e32dc1
+    - name: SHADOW Series - The Blind Huntress_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 99
+        y: 34
+        width: 12
+        height: 14
+      spriteId: 2a50e20f4b5a6bc4e8750a50f1c460fe
+    - name: SHADOW Series - The Blind Huntress_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 102
+        y: 38
+        width: 15
+        height: 36
+      spriteId: f2d7fb2a5f11d2e4586be9b2a3663839
+    - name: SHADOW Series - The Blind Huntress_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 106
+        y: 46
+        width: 14
+        height: 36
+      spriteId: f55dafc7b1b0a90479aa1dbfc584a374
+    - name: SHADOW Series - The Blind Huntress_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 108
+        y: 50
+        width: 14
+        height: 36
+      spriteId: b74c8f2d6f84b9941aeaa159357eb576
+    - name: SHADOW Series - The Blind Huntress_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 109
+        y: 51
+        width: 15
+        height: 36
+      spriteId: 7ce5d85879d80674e936bb5ab1f128a0
+    - name: SHADOW Series - The Blind Huntress_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 109
+        y: 51
+        width: 18
+        height: 37
+      spriteId: f5a0ab4f5fdf54040a9ba5ac8122820b
+    - name: SHADOW Series - The Blind Huntress_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 112
+        y: 17
+        width: 23
+        height: 72
+      spriteId: 67cb65304cab2bd4388ec2501de418ae
+    - name: SHADOW Series - The Blind Huntress_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 112
+        y: 16
+        width: 24
+        height: 72
+      spriteId: 4e561edcde4ca934c8f9005e24817b6e
+    - name: SHADOW Series - The Blind Huntress_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 112
+        y: 15
+        width: 24
+        height: 72
+      spriteId: 91d708f8c645aeb4eb35839a67758200
+    - name: SHADOW Series - The Blind Huntress_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 112
+        y: 50
+        width: 15
+        height: 37
+      spriteId: 0d11d1a1dd91e6d40a36bc05a7950672
+    - name: SHADOW Series - The Blind Huntress_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 112
+        y: 50
+        width: 15
+        height: 36
+      spriteId: 6a306e21917e7604ba66a220ea314926
+    - name: SHADOW Series - The Blind Huntress_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 113
+        y: 50
+        width: 14
+        height: 36
+      spriteId: d3c3f298410bd774e90a356348fbd8e3
+    - name: SHADOW Series - The Blind Huntress_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 113
+        y: 50
+        width: 14
+        height: 36
+      spriteId: 93418e339fa815b4ab8379300a22737d
+    - name: SHADOW Series - The Blind Huntress_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: ccc1bbd1f1cf679478b24c82fd22da44
+    - name: SHADOW Series - The Blind Huntress_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: 5d8d3779954cace419a6c077946ed675
+    - name: SHADOW Series - The Blind Huntress_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: 3ed396d1ed9bbe64f9cebd0ba0e9c034
+    - name: SHADOW Series - The Blind Huntress_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: ba3fe647f626bc6408a24509d6e43226
+    - name: SHADOW Series - The Blind Huntress_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: dcc6a73d722fdb644934759bc3085f64
+    - name: SHADOW Series - The Blind Huntress_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 112
+        y: 48
+        width: 14
+        height: 38
+      spriteId: ab46aff5695423248a17c49cb1d15cca
+    - name: SHADOW Series - The Blind Huntress_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 70691bc11b0bb294e9b3bcbe4283b53e
+    - name: SHADOW Series - The Blind Huntress_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 109
+        y: 47
+        width: 17
+        height: 40
+      spriteId: c0b72d96a749e21428fae343fcdaeb0f
+    - name: SHADOW Series - The Blind Huntress_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 106
+        y: 46
+        width: 28
+        height: 72
+      spriteId: 60baaa98f3dade64189488ce06b2ea53
+    - name: SHADOW Series - The Blind Huntress_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 106
+        y: 48
+        width: 29
+        height: 71
+      spriteId: 5f360eceee522b743ad6579a686ddcf7
+    - name: SHADOW Series - The Blind Huntress_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 106
+        y: 48
+        width: 29
+        height: 73
+      spriteId: ec4d832247ec8df49b3b124f30f70728
+    - name: SHADOW Series - The Blind Huntress_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 84641137a60b4034dab8dfccb44e7f30
+    - name: SHADOW Series - The Blind Huntress_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 26b670be0476b8341b4cf33f02ecc82c
+    - name: SHADOW Series - The Blind Huntress_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 78ca87a0896ae9843940fbed2ee7c7d5
+    - name: SHADOW Series - The Blind Huntress_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 554340d54a4918e4783fb0c11ae45b35
+    - name: SHADOW Series - The Blind Huntress_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: 1dfb745e03371d84eb17bdaa589960f0
+    - name: SHADOW Series - The Blind Huntress_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 514504fadcfffdb40a775bb2a5814841
+    - name: SHADOW Series - The Blind Huntress_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 110
+        y: 48
+        width: 21
+        height: 33
+      spriteId: a0b717e7ef3017746a21f83801d9aa21
+    - name: SHADOW Series - The Blind Huntress_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 108
+        y: 48
+        width: 97
+        height: 33
+      spriteId: 24a47b86dedac0241890a46453b070fe
+    - name: SHADOW Series - The Blind Huntress_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 130
+        y: 48
+        width: 75
+        height: 33
+      spriteId: 5d384d2670be07540969b4912cb51388
+    - name: SHADOW Series - The Blind Huntress_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 117
+        y: 46
+        width: 101
+        height: 35
+      spriteId: cff40eaf1c900704dbfba928b132ff6a
+    - name: SHADOW Series - The Blind Huntress_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 116
+        y: 48
+        width: 103
+        height: 34
+      spriteId: 8edb84d51e01faf42bcdfc82eb945da1
+    - name: SHADOW Series - The Blind Huntress_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 194
+        y: 48
+        width: 33
+        height: 38
+      spriteId: 2afecb23fd66f9442ad49d5a035665ee
+    - name: SHADOW Series - The Blind Huntress_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 154
+        y: 46
+        width: 74
+        height: 46
+      spriteId: 03b2987f07ac1f84f9d9264cba0538d9
+    - name: SHADOW Series - The Blind Huntress_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 155
+        y: 46
+        width: 63
+        height: 47
+      spriteId: 17ddda7c88eb5e8468cce6a9e04038bd
+    - name: SHADOW Series - The Blind Huntress_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 155
+        y: 47
+        width: 63
+        height: 47
+      spriteId: 8bbb04db91198aa4aa2cbe3d3effb357
+    - name: SHADOW Series - The Blind Huntress_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 174
+        y: 48
+        width: 34
+        height: 39
+      spriteId: 049815fb42d537242b037d617550e55b
+    - name: SHADOW Series - The Blind Huntress_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 188
+        y: 48
+        width: 21
+        height: 33
+      spriteId: 281814f9dc3cc124abd06ab8764545e1
+    - name: SHADOW Series - The Blind Huntress_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 114
+        y: 48
+        width: 97
+        height: 33
+      spriteId: 06a2a37762c31854aaa81d8d1c407bad
+    - name: SHADOW Series - The Blind Huntress_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 114
+        y: 48
+        width: 75
+        height: 33
+      spriteId: c4b317c0c43f227468607557e5d439d0
+    - name: SHADOW Series - The Blind Huntress_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 111
+        y: 46
+        width: 73
+        height: 41
+      spriteId: 5e20e51e3f44186489ab40875ebbaea0
+    - name: SHADOW Series - The Blind Huntress_Frame_93
+      frameIndex: 93
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: e8cfaf2ddac05b649899a474a3ed3587
+    - name: SHADOW Series - The Blind Huntress_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 7ab1d48b3e8881c418604cd7e111cb33
+    - name: SHADOW Series - The Blind Huntress_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 005449b7e89ae0a40abb6cd581803c38
+    - name: SHADOW Series - The Blind Huntress_Frame_96
+      frameIndex: 96
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: 4fbc42fff306ee642b5ba6ef5a98159c
+    - name: SHADOW Series - The Blind Huntress_Frame_97
+      frameIndex: 97
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 38
+      spriteId: 26376ab02dea1ff4baad7acc8d665a07
+    - name: SHADOW Series - The Blind Huntress_Frame_98
+      frameIndex: 98
+      cellRect:
+        x: 101
+        y: 46
+        width: 101
+        height: 35
+      spriteId: 979499e7faee6d3448b0ce419bf6683f
+    - name: SHADOW Series - The Blind Huntress_Frame_99
+      frameIndex: 99
+      cellRect:
+        x: 100
+        y: 48
+        width: 103
+        height: 34
+      spriteId: 0e52fca188bd8f84d82a4e0bd916a9d6
+    - name: SHADOW Series - The Blind Huntress_Frame_100
+      frameIndex: 100
+      cellRect:
+        x: 107
+        y: 48
+        width: 97
+        height: 34
+      spriteId: b4d0272b0c485484582a918ea63cf068
+    - name: SHADOW Series - The Blind Huntress_Frame_101
+      frameIndex: 101
+      cellRect:
+        x: 92
+        y: 48
+        width: 33
+        height: 38
+      spriteId: 2337b01b192e87844aa17eb389efb3b5
+    - name: SHADOW Series - The Blind Huntress_Frame_102
+      frameIndex: 102
+      cellRect:
+        x: 91
+        y: 46
+        width: 74
+        height: 46
+      spriteId: 6e513dd9160f3014e803f818f9c0ad28
+    - name: SHADOW Series - The Blind Huntress_Frame_103
+      frameIndex: 103
+      cellRect:
+        x: 101
+        y: 46
+        width: 63
+        height: 47
+      spriteId: 3241bef979d41114f82a58722c90f157
+    - name: SHADOW Series - The Blind Huntress_Frame_104
+      frameIndex: 104
+      cellRect:
+        x: 101
+        y: 47
+        width: 63
+        height: 47
+      spriteId: 17875ccfeff8790409605902b9a9caef
+    - name: SHADOW Series - The Blind Huntress_Frame_105
+      frameIndex: 105
+      cellRect:
+        x: 111
+        y: 48
+        width: 34
+        height: 39
+      spriteId: 787f183f73d1aab4d94935a25350f9a9
+    - name: SHADOW Series - The Blind Huntress_Frame_106
+      frameIndex: 106
+      cellRect:
+        x: 110
+        y: 48
+        width: 21
+        height: 33
+      spriteId: 99a4f26efc537194babc36be9a8ba82a
+    - name: SHADOW Series - The Blind Huntress_Frame_107
+      frameIndex: 107
+      cellRect:
+        x: 114
+        y: 46
+        width: 95
+        height: 38
+      spriteId: 9f3197ff332d3f445b939303eb387d45
+    - name: SHADOW Series - The Blind Huntress_Frame_108
+      frameIndex: 108
+      cellRect:
+        x: 125
+        y: 46
+        width: 80
+        height: 38
+      spriteId: 4ca01de36a334824990c3567045d3340
+    - name: SHADOW Series - The Blind Huntress_Frame_109
+      frameIndex: 109
+      cellRect:
+        x: 130
+        y: 48
+        width: 75
+        height: 36
+      spriteId: cff5e6a4e59e9d64a8714e1a1ff09f11
+    - name: SHADOW Series - The Blind Huntress_Frame_110
+      frameIndex: 110
+      cellRect:
+        x: 135
+        y: 46
+        width: 72
+        height: 41
+      spriteId: a96fe268d975e1b40ac5d1bea0d0c476
+    - name: SHADOW Series - The Blind Huntress_Frame_111
+      frameIndex: 111
+      cellRect:
+        x: 188
+        y: 48
+        width: 21
+        height: 33
+      spriteId: 529cfd8ebe679854cb83f0d38995cf5f
+    - name: SHADOW Series - The Blind Huntress_Frame_112
+      frameIndex: 112
+      cellRect:
+        x: 110
+        y: 46
+        width: 95
+        height: 38
+      spriteId: e05d1bd80371b854c88f99ce711c9060
+    - name: SHADOW Series - The Blind Huntress_Frame_113
+      frameIndex: 113
+      cellRect:
+        x: 114
+        y: 46
+        width: 80
+        height: 38
+      spriteId: 6084052070d6ad6449b8258577a339bf
+    - name: SHADOW Series - The Blind Huntress_Frame_114
+      frameIndex: 114
+      cellRect:
+        x: 114
+        y: 48
+        width: 75
+        height: 36
+      spriteId: 790609bbeb0d5c14e868f3e6b1edd9e3
+    - name: SHADOW Series - The Blind Huntress_Frame_115
+      frameIndex: 115
+      cellRect:
+        x: 111
+        y: 46
+        width: 73
+        height: 41
+      spriteId: 60980278ec52c3042ab617d0c87a2b97
+    - name: SHADOW Series - The Blind Huntress_Frame_116
+      frameIndex: 116
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: a65cc31fd622c7848a3b3cd48dc2b088
+    - name: SHADOW Series - The Blind Huntress_Frame_117
+      frameIndex: 117
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: f9f92f369f2b9854d8e2599650870c38
+    - name: SHADOW Series - The Blind Huntress_Frame_118
+      frameIndex: 118
+      cellRect:
+        x: 109
+        y: 48
+        width: 17
+        height: 40
+      spriteId: 2e2a9cc19da215442be0c7e9a08e4f98
+    - name: SHADOW Series - The Blind Huntress_Frame_119
+      frameIndex: 119
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: bfd9e9bb403cdd2418ed0919ef7c7588
+    - name: SHADOW Series - The Blind Huntress_Frame_120
+      frameIndex: 120
+      cellRect:
+        x: 111
+        y: 48
+        width: 15
+        height: 39
+      spriteId: c1dae8f95d1c3144ab6fc4a948a5d13d
+    - name: SHADOW Series - The Blind Huntress_Frame_121
+      frameIndex: 121
+      cellRect:
+        x: 110
+        y: 48
+        width: 21
+        height: 33
+      spriteId: 31e3748637eae1042bae231450e4b123
+    - name: SHADOW Series - The Blind Huntress_Frame_122
+      frameIndex: 122
+      cellRect:
+        x: 116
+        y: 48
+        width: 30
+        height: 25
+      spriteId: b0a6211326f51264497227f5c021bf80
+    - name: SHADOW Series - The Blind Huntress_Frame_123
+      frameIndex: 123
+      cellRect:
+        x: 121
+        y: 48
+        width: 35
+        height: 20
+      spriteId: 1fbb45516a3c6274984fcfd3db10ee29
+    - name: SHADOW Series - The Blind Huntress_Frame_124
+      frameIndex: 124
+      cellRect:
+        x: 121
+        y: 48
+        width: 35
+        height: 9
+      spriteId: 33b835600c1578d43b7156253260dbb7
+    - name: SHADOW Series - The Blind Huntress_Frame_125
+      frameIndex: 125
+      cellRect:
+        x: 122
+        y: 48
+        width: 36
+        height: 24
+      spriteId: 538300ec8998d2443b15f768e215a4f3
+    - name: SHADOW Series - The Blind Huntress_Frame_126
+      frameIndex: 126
+      cellRect:
+        x: 122
+        y: 48
+        width: 40
+        height: 25
+      spriteId: 76ef98f9fbd1e2a41b6b046edb5119a7
+    - name: SHADOW Series - The Blind Huntress_Frame_127
+      frameIndex: 127
+      cellRect:
+        x: 122
+        y: 48
+        width: 42
+        height: 27
+      spriteId: 27423158bc68e0d40bf13de60042d068
+    - name: SHADOW Series - The Blind Huntress_Frame_128
+      frameIndex: 128
+      cellRect:
+        x: 122
+        y: 48
+        width: 42
+        height: 27
+      spriteId: 4fdfbf372c692b54d8fb5fc57fa8befe
+    - name: SHADOW Series - The Blind Huntress_Frame_129
+      frameIndex: 129
+      cellRect:
+        x: 122
+        y: 48
+        width: 42
+        height: 6
+      spriteId: 7a3846b4591474347993f3a07ccbebcf
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 240, y: 128}

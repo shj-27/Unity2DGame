@@ -1,0 +1,2827 @@
+fileFormatVersion: 2
+guid: 5ebbf4586ab242245a9f32af33f58866
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_0
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 893
+      y: 191
+      width: 73
+      height: 57
+    spriteID: dd0d60a008126db46a9d0c08fae9ea5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 893, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_1
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 259
+      width: 73
+      height: 57
+    spriteID: c1cc0760dff6e2e44a25c567ce84c3a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_2
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 259
+      width: 73
+      height: 57
+    spriteID: ecd6ceafcfec70344aa7be0f502d472f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_3
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 324
+      width: 73
+      height: 56
+    spriteID: 0b21efd10b2a68d48bb757602a471cbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 166, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_4
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 328
+      y: 324
+      width: 73
+      height: 54
+    spriteID: 616e0f385bb5c304ea142a7af801ffd1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 328, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_5
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 409
+      y: 324
+      width: 73
+      height: 54
+    spriteID: a224814dcbf151b4d8bfdc449a684ce5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 409, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_6
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 490
+      y: 324
+      width: 73
+      height: 54
+    spriteID: 56f998e7a588e7640a52e87990485aea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 490, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_7
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 571
+      y: 324
+      width: 73
+      height: 54
+    spriteID: 2eaca9032cabc554b9cf2e3c71cead83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 571, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_8
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 652
+      y: 324
+      width: 73
+      height: 54
+    spriteID: f9ecb5a0b9d41eb479419f1ed5365a31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 652, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_9
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 733
+      y: 324
+      width: 73
+      height: 54
+    spriteID: 28836933caced0a40aa829d3a709444c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 733, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_10
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 324
+      width: 73
+      height: 56
+    spriteID: 058f1b1f83465ff43954584cc77a64b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 247, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_11
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 259
+      width: 73
+      height: 57
+    spriteID: fcdb45d6db3e46a4f96f9f865c3171c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 166, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_12
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 259
+      width: 73
+      height: 57
+    spriteID: 75ff7632cfa6471468d5b7d2d9436456
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 247, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_13
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 328
+      y: 259
+      width: 73
+      height: 57
+    spriteID: 7fe85c2dbe3f16f4c9e259107817e714
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 328, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_14
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 409
+      y: 259
+      width: 73
+      height: 57
+    spriteID: 1054274b6b5aa03458e5e8a100bb0b8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 409, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_15
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 490
+      y: 259
+      width: 73
+      height: 57
+    spriteID: df337814c07738940b6226da6143fb7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 490, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_16
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 245
+      y: 191
+      width: 73
+      height: 58
+    spriteID: 560318d8a0abfbb45a8ee11595ecaca3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 245, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_17
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 191
+      width: 73
+      height: 59
+    spriteID: 401d19f672de0ed42b796263dad63a66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_18
+    originalName: 
+    pivot: {x: 1.048611, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 191
+      width: 72
+      height: 60
+    spriteID: f54601159b63e9545b8628f8e78bb1d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_19
+    originalName: 
+    pivot: {x: 1.048611, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 653
+      y: 191
+      width: 72
+      height: 58
+    spriteID: acb5286df7c77464291bc8f232f78ebb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 653, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_20
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 326
+      y: 191
+      width: 73
+      height: 58
+    spriteID: 4528326c9e4494c49bad8b5f36ffaf7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 326, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_21
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 407
+      y: 191
+      width: 73
+      height: 58
+    spriteID: 9de51b51e8ed8de4f965b8f619894f2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 407, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_22
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 488
+      y: 191
+      width: 73
+      height: 58
+    spriteID: d55e8985eedf64a4a9b68788d38b8b3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 488, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_23
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 935
+      y: 96
+      width: 73
+      height: 60
+    spriteID: f8be60ec4806eb94899f000561754faa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 935, y: 96}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_24
+    originalName: 
+    pivot: {x: 1.048611, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 165
+      y: 191
+      width: 72
+      height: 59
+    spriteID: 4fd9319a4cfa3d646beee2d32930d359
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 165, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_25
+    originalName: 
+    pivot: {x: 1.048611, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 733
+      y: 191
+      width: 72
+      height: 58
+    spriteID: eb557ac45e78715429f3c6c0d1d2e486
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 733, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_26
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 571
+      y: 259
+      width: 73
+      height: 57
+    spriteID: 6ce39e6791edaed4ea47433a7f701007
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 571, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_27
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 652
+      y: 259
+      width: 73
+      height: 57
+    spriteID: 1d400dd8c7afb3b4eb45c1382c65ecbe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 652, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_28
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 733
+      y: 259
+      width: 73
+      height: 57
+    spriteID: bdf5d226e33dd3c4bb282678299c7af1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 733, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_29
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 814
+      y: 259
+      width: 73
+      height: 57
+    spriteID: 6b2da65c8d2f896488c3b64ebc6cd538
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 814, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_30
+    originalName: 
+    pivot: {x: 1.0514705, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 320
+      y: 389
+      width: 68
+      height: 55
+    spriteID: 47f51458b74cafd48a96e575dd0a3b31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 320, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_32
+    originalName: 
+    pivot: {x: 0.44117647, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 333
+      y: 4
+      width: 187
+      height: 42
+    spriteID: 103ecb47754b0454499f20e215342a01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 333, y: 4}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_33
+    originalName: 
+    pivot: {x: 0.4435484, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 528
+      y: 4
+      width: 186
+      height: 42
+    spriteID: 2f2fdd70f9c60c7478cec6204c7e569e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 528, y: 4}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_34
+    originalName: 
+    pivot: {x: 0.4435484, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 4
+      width: 186
+      height: 51
+    spriteID: 6c9c6872efc282b4385eefd3ca99dd73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 4}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_35
+    originalName: 
+    pivot: {x: 0.62598425, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 127
+      height: 84
+    spriteID: 20e029993020a8345b2d3b7890a11751
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_36
+    originalName: 
+    pivot: {x: 0.55376345, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 115
+      y: 96
+      width: 93
+      height: 87
+    spriteID: bc47d2ecfc8b7df459f941952292f547
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 115, y: 96}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 216
+      y: 96
+      width: 85
+      height: 87
+    spriteID: c2403fc06d29d984690b1785cbcfe68d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 216, y: 96}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_39
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 895
+      y: 259
+      width: 73
+      height: 57
+    spriteID: ebd5d7dad8dc8a94fab4c3a5b8c1d0f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 895, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_40
+    originalName: 
+    pivot: {x: 1.0514705, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 897
+      y: 324
+      width: 68
+      height: 57
+    spriteID: d80beb40ed297fa45b501eafb2eb7dee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 897, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_41
+    originalName: 
+    pivot: {x: 1.0681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 246
+      y: 389
+      width: 66
+      height: 57
+    spriteID: f87249eea21a8f24fa69c7607fe111f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 246, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_42
+    originalName: 
+    pivot: {x: 1.125, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 976
+      y: 259
+      width: 36
+      height: 57
+    spriteID: 6594062f8073494498fd416c1d5bbdf7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 976, y: 259}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_43
+    originalName: 
+    pivot: {x: 1.1285714, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 910
+      y: 389
+      width: 35
+      height: 57
+    spriteID: c633c156e23762e429fe896b1a2d291a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 910, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_44
+    originalName: 
+    pivot: {x: 1.0661764, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 389
+      width: 68
+      height: 57
+    spriteID: dfb0ff4740386cc4ebbe28603d3875f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_45
+    originalName: 
+    pivot: {x: 1.0428572, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 556
+      y: 96
+      width: 105
+      height: 57
+    spriteID: 7a7529450e6c5314ba10933903caa2e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 556, y: 96}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_46
+    originalName: 
+    pivot: {x: 1.0405406, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 437
+      y: 96
+      width: 111
+      height: 57
+    spriteID: d5a93917d3509ea48917994024a5841f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 437, y: 96}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_47
+    originalName: 
+    pivot: {x: 1.0291667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 309
+      y: 96
+      width: 120
+      height: 57
+    spriteID: 59816ed72e721aa4695d872c93ba88aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 309, y: 96}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_48
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 324
+      width: 73
+      height: 57
+    spriteID: 579a2bdef7dbfec47b15a291292de465
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_49
+    originalName: 
+    pivot: {x: 0.99342096, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 569
+      y: 191
+      width: 76
+      height: 55
+    spriteID: b4313a68c05cd9540aec5c345d2b3db1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 569, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_50
+    originalName: 
+    pivot: {x: 0.94, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 814
+      y: 324
+      width: 75
+      height: 52
+    spriteID: e0a57da83bf7a894ea62c87a493dc3c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 814, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_57
+    originalName: 
+    pivot: {x: -0.17961162, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 905
+      y: 4
+      width: 103
+      height: 64
+    spriteID: 5617250c97e975147891c41384d19a73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 905, y: 4}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_58
+    originalName: 
+    pivot: {x: -0.61184216, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 669
+      y: 96
+      width: 76
+      height: 64
+    spriteID: 81b535397b6ba2d4087efb8acd455c0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 669, y: 96}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_59
+    originalName: 
+    pivot: {x: -0.60389614, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 850
+      y: 96
+      width: 77
+      height: 62
+    spriteID: 77919ab378bbff944a4379cfa5d613df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 850, y: 96}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_61
+    originalName: 
+    pivot: {x: -0.22499992, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 565
+      y: 389
+      width: 60
+      height: 57
+    spriteID: 5a75f373aa0418b4eb7901343cd2ca07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 565, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_62
+    originalName: 
+    pivot: {x: 1.048611, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 813
+      y: 191
+      width: 72
+      height: 58
+    spriteID: c06c5db449fde1842bc3241445e7e6e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 813, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_63
+    originalName: 
+    pivot: {x: 1.0479451, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 324
+      width: 73
+      height: 57
+    spriteID: dd4c43893f57cf3479fa337a055ca8f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_64
+    originalName: 
+    pivot: {x: 0.9527027, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 389
+      width: 74
+      height: 52
+    spriteID: efea46d5dd96ef74e98604fe3563c5d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 80, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_65
+    originalName: 
+    pivot: {x: 0.92763156, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 162
+      y: 389
+      width: 76
+      height: 50
+    spriteID: fc3fcf2598a46da44ac95890ce7608f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 162, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_66
+    originalName: 
+    pivot: {x: 0.92763156, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 396
+      y: 389
+      width: 76
+      height: 49
+    spriteID: 7b24ff9b02be1bc4d9f8cd8e41c3f4e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 396, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_67
+    originalName: 
+    pivot: {x: 0.91558444, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 480
+      y: 389
+      width: 77
+      height: 46
+    spriteID: ca24b1df95eddfc46946ea239c658585
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 480, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_68
+    originalName: 
+    pivot: {x: 0.91558444, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 633
+      y: 389
+      width: 77
+      height: 42
+    spriteID: 991a6cfbd7bc0324699840e3e6b6772e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 633, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_69
+    originalName: 
+    pivot: {x: 0.90384614, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 718
+      y: 389
+      width: 78
+      height: 40
+    spriteID: 1eb940225d1b4344298fe60ffb00f9b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 718, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_70
+    originalName: 
+    pivot: {x: 0.64673907, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 722
+      y: 52
+      width: 92
+      height: 27
+    spriteID: f263f799dfff3364396ec28243b222b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 722, y: 52}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_71
+    originalName: 
+    pivot: {x: 0.4241071, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 309
+      y: 161
+      width: 112
+      height: 16
+    spriteID: f807359769aa1af40827c3e9b33c3ae2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 309, y: 161}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_72
+    originalName: 
+    pivot: {x: 0.39732143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 488
+      y: 498
+      width: 112
+      height: 14
+    spriteID: b67a5a591da721047a5b3f156d89c718
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 488, y: 498}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_73
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 63
+      width: 113
+      height: 14
+    spriteID: 4c442ab85505d2d48bacfa2992169dfe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 63}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_74
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 528
+      y: 54
+      width: 113
+      height: 14
+    spriteID: e4c03763e3d55c24aa79dde309818c0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 528, y: 54}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_75
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 333
+      y: 54
+      width: 113
+      height: 14
+    spriteID: 430b511f8d46afc4ab280a263067ddc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 333, y: 54}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_76
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 454
+      width: 113
+      height: 14
+    spriteID: f9043f0a1c1d7f1419a86662684b0213
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 454}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_77
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 454
+      width: 113
+      height: 14
+    spriteID: 8191f0361611ae143a51f7a8180de916
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 125, y: 454}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_78
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 246
+      y: 454
+      width: 113
+      height: 14
+    spriteID: 0cd965c60bc267d41864ae140aeb2cde
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 246, y: 454}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_79
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 367
+      y: 454
+      width: 113
+      height: 14
+    spriteID: 8680be6c6fbe70744bbf98110c2dbdf0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 367, y: 454}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_80
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 488
+      y: 454
+      width: 113
+      height: 14
+    spriteID: 8433db19ed707854b898c6e24cc7c96f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 488, y: 454}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_81
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 609
+      y: 454
+      width: 113
+      height: 14
+    spriteID: ed1ebe9c88a5cef48aea6082f17d774f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 609, y: 454}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_82
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 730
+      y: 454
+      width: 113
+      height: 14
+    spriteID: c6b1135d87161ec46abcb76591dfbefb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 730, y: 454}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_83
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 851
+      y: 454
+      width: 113
+      height: 14
+    spriteID: 99b5012e561347048bb84c89dc0c1102
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 851, y: 454}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_84
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 476
+      width: 113
+      height: 14
+    spriteID: 2e05362840f7770478eb5d09590d3a9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 476}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_85
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 476
+      width: 113
+      height: 14
+    spriteID: 88e7087489fb49a418ee4d5601f92514
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 125, y: 476}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_86
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 246
+      y: 476
+      width: 113
+      height: 14
+    spriteID: 42c62de8c128d214aac0642fe2b74c50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 246, y: 476}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_87
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 367
+      y: 476
+      width: 113
+      height: 14
+    spriteID: 7467a4013fd8b964197ae85fe8f0a2c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 367, y: 476}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_88
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 488
+      y: 476
+      width: 113
+      height: 14
+    spriteID: bf06da9d21f931748b1936e082d623ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 488, y: 476}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_89
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 609
+      y: 476
+      width: 113
+      height: 14
+    spriteID: 1a862477709014c428184c34f3924254
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 609, y: 476}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_90
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 730
+      y: 476
+      width: 113
+      height: 14
+    spriteID: c1ca7d9b0c932dd4cb7cc6c1684b68d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 730, y: 476}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_91
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 851
+      y: 476
+      width: 113
+      height: 14
+    spriteID: 31695122b5a2a4f4e835db760835584d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 851, y: 476}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_92
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 498
+      width: 113
+      height: 14
+    spriteID: 3aa47d9861873b844a06c47a5c21b4e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 498}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_93
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 498
+      width: 113
+      height: 14
+    spriteID: 06b2334b5f9a6094a848f4509e5adce6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 125, y: 498}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_94
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 246
+      y: 498
+      width: 113
+      height: 14
+    spriteID: beb65f3c8d6519145958946ed3b41186
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 246, y: 498}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_95
+    originalName: 
+    pivot: {x: 0.39380533, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 367
+      y: 498
+      width: 113
+      height: 14
+    spriteID: 4e566122aaa9c7546a0fbf2258e42464
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 367, y: 498}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_31
+    originalName: 
+    pivot: {x: 0.42571428, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 722
+      y: 4
+      width: 175
+      height: 40
+    spriteID: 8de88547e06bfc5478983b073857900c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 722, y: 4}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_38
+    originalName: 
+    pivot: {x: 0.5970874, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 96
+      width: 103
+      height: 87
+    spriteID: 26f9986ed43a91a4cab4fdc8f14052a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 96}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_51
+    originalName: 
+    pivot: {x: 0.37499994, y: -0.35555553}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 953
+      y: 389
+      width: 44
+      height: 45
+    spriteID: ba53dd83aaf08dc44b2c71dfd265fb4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 953, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_52
+    originalName: 
+    pivot: {x: 0.26136366, y: -0.43478262}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 389
+      width: 44
+      height: 46
+    spriteID: ba619572f5ca1ef48b1ec73b93ed778a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_53
+    originalName: 
+    pivot: {x: 0.14444438, y: -0.46666664}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 974
+      y: 191
+      width: 45
+      height: 45
+    spriteID: 0d126b488d7e4a7489bff2f4dec70d78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 974, y: 191}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_54
+    originalName: 
+    pivot: {x: 0.010869573, y: -0.38297874}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 973
+      y: 324
+      width: 46
+      height: 47
+    spriteID: 9b823aea8a844c545a318571241d13be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 973, y: 324}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_55
+    originalName: 
+    pivot: {x: -0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 649
+      y: 54
+      width: 39
+      height: 29
+    spriteID: 505b960c6a91f6a419114e0da70b8ae6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 649, y: 54}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_56
+    originalName: 
+    pivot: {x: -0.44565216, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 856
+      y: 389
+      width: 46
+      height: 44
+    spriteID: 83a263b02df00734ab0e783baa2bc7a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 856, y: 389}
+  - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_60
+    originalName: 
+    pivot: {x: -0.17415726, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 753
+      y: 96
+      width: 89
+      height: 54
+    spriteID: 7895c497c88013d4b844dda2cb937a17
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 753, y: 96}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -429780891
+    name: SHADOW Series - The Shadowed Wetlands Boss
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: dd0d60a008126db46a9d0c08fae9ea5d
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: c1cc0760dff6e2e44a25c567ce84c3a8
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: ecd6ceafcfec70344aa7be0f502d472f
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 56
+      spriteId: 0b21efd10b2a68d48bb757602a471cbc
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 54
+      spriteId: 616e0f385bb5c304ea142a7af801ffd1
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 54
+      spriteId: a224814dcbf151b4d8bfdc449a684ce5
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 54
+      spriteId: 56f998e7a588e7640a52e87990485aea
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 54
+      spriteId: 2eaca9032cabc554b9cf2e3c71cead83
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 54
+      spriteId: f9ecb5a0b9d41eb479419f1ed5365a31
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 54
+      spriteId: 28836933caced0a40aa829d3a709444c
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 56
+      spriteId: 058f1b1f83465ff43954584cc77a64b3
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: fcdb45d6db3e46a4f96f9f865c3171c4
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: 75ff7632cfa6471468d5b7d2d9436456
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: 7fe85c2dbe3f16f4c9e259107817e714
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: 1054274b6b5aa03458e5e8a100bb0b8e
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: df337814c07738940b6226da6143fb7f
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 58
+      spriteId: 560318d8a0abfbb45a8ee11595ecaca3
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 59
+      spriteId: 401d19f672de0ed42b796263dad63a66
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 48
+        y: 0
+        width: 72
+        height: 60
+      spriteId: f54601159b63e9545b8628f8e78bb1d8
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 48
+        y: 0
+        width: 72
+        height: 58
+      spriteId: acb5286df7c77464291bc8f232f78ebb
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 58
+      spriteId: 4528326c9e4494c49bad8b5f36ffaf7d
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 58
+      spriteId: 9de51b51e8ed8de4f965b8f619894f2d
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 58
+      spriteId: d55e8985eedf64a4a9b68788d38b8b3c
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 60
+      spriteId: f8be60ec4806eb94899f000561754faa
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 48
+        y: 0
+        width: 72
+        height: 59
+      spriteId: 4fd9319a4cfa3d646beee2d32930d359
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 48
+        y: 0
+        width: 72
+        height: 58
+      spriteId: eb557ac45e78715429f3c6c0d1d2e486
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: 6ce39e6791edaed4ea47433a7f701007
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: 1d400dd8c7afb3b4eb45c1382c65ecbe
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: bdf5d226e33dd3c4bb282678299c7af1
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: 6b2da65c8d2f896488c3b64ebc6cd538
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 52
+        y: 0
+        width: 68
+        height: 55
+      spriteId: 47f51458b74cafd48a96e575dd0a3b31
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 41
+        y: 0
+        width: 187
+        height: 42
+      spriteId: 103ecb47754b0454499f20e215342a01
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 41
+        y: 0
+        width: 186
+        height: 42
+      spriteId: 2f2fdd70f9c60c7478cec6204c7e569e
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 41
+        y: 0
+        width: 186
+        height: 51
+      spriteId: 6c9c6872efc282b4385eefd3ca99dd73
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 44
+        y: 0
+        width: 127
+        height: 84
+      spriteId: 20e029993020a8345b2d3b7890a11751
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 72
+        y: 0
+        width: 93
+        height: 87
+      spriteId: bc47d2ecfc8b7df459f941952292f547
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 81
+        y: 0
+        width: 85
+        height: 87
+      spriteId: c2403fc06d29d984690b1785cbcfe68d
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: ebd5d7dad8dc8a94fab4c3a5b8c1d0f6
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 52
+        y: 0
+        width: 68
+        height: 57
+      spriteId: d80beb40ed297fa45b501eafb2eb7dee
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 53
+        y: 0
+        width: 66
+        height: 57
+      spriteId: f87249eea21a8f24fa69c7607fe111f2
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 83
+        y: 0
+        width: 36
+        height: 57
+      spriteId: 6594062f8073494498fd416c1d5bbdf7
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 84
+        y: 0
+        width: 35
+        height: 57
+      spriteId: c633c156e23762e429fe896b1a2d291a
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 51
+        y: 0
+        width: 68
+        height: 57
+      spriteId: dfb0ff4740386cc4ebbe28603d3875f2
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 14
+        y: 0
+        width: 105
+        height: 57
+      spriteId: 7a7529450e6c5314ba10933903caa2e8
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 8
+        y: 0
+        width: 111
+        height: 57
+      spriteId: d5a93917d3509ea48917994024a5841f
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 0
+        y: 0
+        width: 120
+        height: 57
+      spriteId: 59816ed72e721aa4695d872c93ba88aa
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: 579a2bdef7dbfec47b15a291292de465
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 48
+        y: 0
+        width: 76
+        height: 55
+      spriteId: b4313a68c05cd9540aec5c345d2b3db1
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 53
+        y: 0
+        width: 75
+        height: 52
+      spriteId: e0a57da83bf7a894ea62c87a493dc3c4
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 142
+        y: 0
+        width: 103
+        height: 64
+      spriteId: 5617250c97e975147891c41384d19a73
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 170
+        y: 0
+        width: 76
+        height: 64
+      spriteId: 81b535397b6ba2d4087efb8acd455c0e
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 170
+        y: 0
+        width: 77
+        height: 62
+      spriteId: 77919ab378bbff944a4379cfa5d613df
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 137
+        y: 0
+        width: 60
+        height: 57
+      spriteId: 5a75f373aa0418b4eb7901343cd2ca07
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 48
+        y: 0
+        width: 72
+        height: 58
+      spriteId: c06c5db449fde1842bc3241445e7e6e6
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 47
+        y: 0
+        width: 73
+        height: 57
+      spriteId: dd4c43893f57cf3479fa337a055ca8f6
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 53
+        y: 0
+        width: 74
+        height: 52
+      spriteId: efea46d5dd96ef74e98604fe3563c5d4
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 53
+        y: 0
+        width: 76
+        height: 50
+      spriteId: fc3fcf2598a46da44ac95890ce7608f4
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 53
+        y: 0
+        width: 76
+        height: 49
+      spriteId: 7b24ff9b02be1bc4d9f8cd8e41c3f4e0
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 53
+        y: 0
+        width: 77
+        height: 46
+      spriteId: ca24b1df95eddfc46946ea239c658585
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 53
+        y: 0
+        width: 77
+        height: 42
+      spriteId: 991a6cfbd7bc0324699840e3e6b6772e
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 53
+        y: 0
+        width: 78
+        height: 40
+      spriteId: 1eb940225d1b4344298fe60ffb00f9b0
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 64
+        y: 0
+        width: 92
+        height: 27
+      spriteId: f263f799dfff3364396ec28243b222b5
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 76
+        y: 0
+        width: 112
+        height: 16
+      spriteId: f807359769aa1af40827c3e9b33c3ae2
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 79
+        y: 0
+        width: 112
+        height: 14
+      spriteId: b67a5a591da721047a5b3f156d89c718
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 4c442ab85505d2d48bacfa2992169dfe
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: e4c03763e3d55c24aa79dde309818c0f
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 430b511f8d46afc4ab280a263067ddc8
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: f9043f0a1c1d7f1419a86662684b0213
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 8191f0361611ae143a51f7a8180de916
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 0cd965c60bc267d41864ae140aeb2cde
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 8680be6c6fbe70744bbf98110c2dbdf0
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 8433db19ed707854b898c6e24cc7c96f
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: ed1ebe9c88a5cef48aea6082f17d774f
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: c6b1135d87161ec46abcb76591dfbefb
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 99b5012e561347048bb84c89dc0c1102
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 2e05362840f7770478eb5d09590d3a9c
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 88e7087489fb49a418ee4d5601f92514
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 42c62de8c128d214aac0642fe2b74c50
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 7467a4013fd8b964197ae85fe8f0a2c6
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: bf06da9d21f931748b1936e082d623ff
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 1a862477709014c428184c34f3924254
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: c1ca7d9b0c932dd4cb7cc6c1684b68d3
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 31695122b5a2a4f4e835db760835584d
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 3aa47d9861873b844a06c47a5c21b4e5
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_93
+      frameIndex: 93
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 06b2334b5f9a6094a848f4509e5adce6
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: beb65f3c8d6519145958946ed3b41186
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: 79
+        y: 0
+        width: 113
+        height: 14
+      spriteId: 4e566122aaa9c7546a0fbf2258e42464
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 49
+        y: 0
+        width: 175
+        height: 40
+      spriteId: 8de88547e06bfc5478983b073857900c
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 62
+        y: 0
+        width: 103
+        height: 87
+      spriteId: 26f9986ed43a91a4cab4fdc8f14052a9
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 107
+        y: 16
+        width: 44
+        height: 45
+      spriteId: ba53dd83aaf08dc44b2c71dfd265fb4f
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 112
+        y: 20
+        width: 44
+        height: 46
+      spriteId: ba619572f5ca1ef48b1ec73b93ed778a
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 117
+        y: 21
+        width: 45
+        height: 45
+      spriteId: 0d126b488d7e4a7489bff2f4dec70d78
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 123
+        y: 18
+        width: 46
+        height: 47
+      spriteId: 9b823aea8a844c545a318571241d13be
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 143
+        y: 0
+        width: 39
+        height: 29
+      spriteId: 505b960c6a91f6a419114e0da70b8ae6
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 144
+        y: 0
+        width: 46
+        height: 44
+      spriteId: 83a263b02df00734ab0e783baa2bc7a2
+    - name: SHADOW Series - The Shadowed Wetlands Boss_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 139
+        y: 0
+        width: 89
+        height: 54
+      spriteId: 7895c497c88013d4b844dda2cb937a17
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 247, y: 87}
