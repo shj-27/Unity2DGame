@@ -64,9 +64,8 @@ public class StateMachine : MonoBehaviour
 
 }
 
-// 캐릭터 메인 스테이트
-// 개별상태(점프, 달리기, 대기 등)는 이 클래스를 상속해서 필요한 메서드만 재정의(override)
-public class CharacterMainState
+
+public class CharacterMainState //상태 등록을 위한 클래스
 {
     //캐릭터 상태 변경 변수 설정
     private StateMachine stateMachine;
