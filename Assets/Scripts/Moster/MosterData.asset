@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf1547f5d544ef4ab9d177a8dfc0be1, type: 3}
   m_Name: MosterData
   m_EditorClassIdentifier: 
-  monsterName: 
+  monsterName: BlueWolf
+  colors: 
   maxHp: 0
   moveSpeed: 0
   prefab: {fileID: 0}
