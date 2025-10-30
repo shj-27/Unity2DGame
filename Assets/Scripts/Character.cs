@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 
 public class Character : MonoBehaviour
@@ -8,16 +11,15 @@ public class Character : MonoBehaviour
     // 상태 Enum: 캐릭터의 가능한 상태 정의
     enum State
     {
-        Idle,   // 대기 상태
-        Walk,   // 이동 상태
-        Attack, // 공격 상태 (현재 미사용)
+        Ible,   // 대기 상태
+        Attack, // 공격 상태
         Trace,  // 추격 상태
         Return, // 복귀 상태
+        Hit,    // 데미지를 받음
         Die     // 캐릭터 사망
     }
 
-    //타겟(적)
-    [SerializeField] private Transform target;
+    
 
     //이동 속도
     [SerializeField] private float chspeed;
@@ -28,15 +30,25 @@ public class Character : MonoBehaviour
     private SpriteRenderer srr;
     //땅 위에서 다녀야하니 필수
     private Rigidbody2D rb;
-    //적은 다수 가까운 적을 먼저 때리게 만들기 위해 만들어진 놈
-    [SerializeField] private GameObject[] enemy;
+   
     // 상태 머신 컴포넌트
     private StateMachine stateMachine;
     // 캐릭터의 시작 위치
     private Vector2 startPos;
 
+
     //적을 만나게 되면 공격 애니메이션 발동
-    private Ray2D Attack;
+    private RaycastHit2D attack;
+    [SerializeField] private float attackLength;
+
+
+    //타겟(적)
+    [SerializeField] private Transform target;
+
+    //적은 다수 가까운 적을 먼저 때리게 만들기 위해 만들어진 놈
+    [SerializeField] private GameObject[] enemy;
+
+    private Animator ani;
 
     private void Awake()
     {
@@ -47,16 +59,17 @@ public class Character : MonoBehaviour
         // StateMachine 컴포넌트 동적 추가
         stateMachine = gameObject.AddComponent<StateMachine>();
 
+        ani = GetComponent<Animator>();
 
 
         // 상태 등록: Idle 상태, Character 데이터를 StateMachine한테 전달
-        stateMachine.AddState(State.Idle, new IdleState(this)); 
-       
+        stateMachine.AddState(State.Ible, new IbleState(this));
+        stateMachine.AddState(State.Attack, new AttackState(this));
         stateMachine.AddState(State.Trace, new TraceState(this));
         stateMachine.AddState(State.Return, new ReturnState(this));
 
         // 초기 상태 설정: Idle 상태로 시작
-        stateMachine.InitState(State.Idle);
+        stateMachine.InitState(State.Ible);
     }
 
     void Start()
@@ -72,13 +85,21 @@ public class Character : MonoBehaviour
 
     void Update()
     {
-        // 매 프레임: StateMachine.Update가 상태의 Update/Transition 호출
+        // 캐릭터가 오른쪽을 보는 경우 (flipX = false)
+        Vector2 attackDirection = srr.flipX ? Vector2.right : Vector2.left;
+        
+        // Raycast 방향을 캐릭터 방향에 따라 변경
+        attack = Physics2D.Raycast(transform.position, attackDirection, attackLength);
+
+        // Debug Ray도 동일한 방향으로 표시
+        Debug.DrawRay(transform.position, attackDirection * attackLength, Color.red);
+
+     
     }
 
     private void FixedUpdate()
     {
-        // 물리 업데이트: x축 이동, horizontal 입력 사용
-        //rb.velocity = new Vector2(horizontal * chspeed, rb.velocity.y);
+        
     }
 
 
@@ -129,22 +150,47 @@ public class Character : MonoBehaviour
             get { return owner.srr; }
         }
 
+        //공격관련
+        public RaycastHit2D attack
+        {
+            get { return owner.attack; }
+        }
+
+        public float attackLength
+        {
+            get { return owner.attackLength; }
+        }
+
+        public Animator ani
+        {
+            get { return owner.ani; }
+        }
+
         // 생성자: Character 데이터 저장
         public Player(Character owner)
         {
             this.owner = owner;
         }
 
+       
+
     }
 
     //대기 상태
-    private class IdleState : Player        //현재 플레이어는 대기 상태로 만들기 등록
+    private class IbleState : Player        //현재 플레이어는 대기 상태로 만들기 등록
     {
-        // 생성자: Character 데이터 받기
-        public IdleState(Character owner) : base(owner) { }
+        //Character 데이터 받기
+        public IbleState(Character owner) : base(owner) { }
 
+        public override void Update()
+        {
+            owner.ani.SetBool("Move", false);
+        }
+        
         public override void Transition()
         {
+           
+
             //플레이어가 일정거리 안에 들어오면 추적상태로 전환
             if (Vector2.Distance(target.position, transform.position) < enemyRadius)
             {
@@ -159,36 +205,37 @@ public class Character : MonoBehaviour
     {
         // 생성자: Character 데이터 받기
         public TraceState(Character owner) : base(owner) { }
-        
+
         public override void Update()
         {
-            
+            owner.ani.SetBool("Move", true);
             Vector2 dir = (target.position - transform.position).normalized;
-            // y축 제어: 수평만 이동
-            Debug.Log("발동중");
-            
-            
             rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
-            
-            if(dir.x < 0)
+            Debug.Log(dir.x);
+            if (dir.x > 0)
             {
                 owner.srr.flipX = true;
+               
             }
             else
             {
                 owner.srr.flipX = false;
             }
-        }
-
-        public override void Transition()
-        {
-            // Transition: 타겟이 범위를 벗어나면 Return 상태로 전이
-            if (Vector2.Distance(target.position, transform.position) > enemyRadius)
+            Vector2 attackDirection = srr.flipX ? Vector2.right : Vector2.left;
+            Vector2 rayStart = (Vector2)transform.position + attackDirection;
+            RaycastHit2D hit = Physics2D.Raycast(rayStart, attackDirection, owner.attackLength);
+            //나는 지금 적을 만나버렸어요 공격하겠습니다
+           
+            if(hit.collider != null && hit.collider.CompareTag("Enemy"))
             {
-                ChangeState(State.Return);
+               
+                ChangeState(State.Attack);
+                return;
             }
-        }
+           
+        }   
     }
+
 
     //복귀 상태
     private class ReturnState : Player
@@ -208,8 +255,55 @@ public class Character : MonoBehaviour
             // Transition: 시작 위치 도달 시 Idle 상태로 전이
             if (Vector2.Distance(startPos, transform.position) < 0.1f)
             {
-                ChangeState(State.Idle);
+                ChangeState(State.Ible);
             }
+        }
+    }
+
+    private class AttackState : Player
+    {
+        private float attackDuration = 0.5f; // 공격 애니메이션 길이
+        private float timer;
+        
+
+        public AttackState(Character owner) : base(owner) { }
+
+        public override void Enter()   //공격 애니메이션
+        {
+            //공격 애니메이션 공격할 때 그 자리에서 공격하기
+            
+            rb.velocity = Vector2.zero;
+            timer = 0;
+            owner.ani.SetTrigger("Attack");
+        }
+
+        public override void Update()  //데미지 처리
+        {
+           
+            timer += Time.deltaTime; //공격딜레이 시작
+            if (timer > attackDuration)
+            {
+                owner.srr.flipX = false;    
+                
+                timer = 0;
+                ChangeState(State.Ible);
+            }
+
+            
+        }
+
+       
+
+        
+    }
+
+    private  class DieState : Player
+    {
+        public DieState(Character owner) : base(owner) { }
+
+        public override void Enter()
+        {
+            GameObject.Destroy(owner.gameObject);
         }
     }
 }
