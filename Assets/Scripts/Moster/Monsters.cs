@@ -84,7 +84,7 @@ public class Monsters : MonoBehaviour
     void Update()
     {
         // 캐릭터가 오른쪽을 보는 경우 (flipX = false)
-        Vector2 attackDirection = srr.flipX ? Vector2.right : Vector2.left;
+        Vector2 attackDirection = srr.flipX ? Vector2.left : Vector2.right;
         
         // Raycast 방향을 캐릭터 방향에 따라 변경
         attack = Physics2D.Raycast(transform.position, attackDirection, attackLength);
@@ -175,9 +175,9 @@ public class Monsters : MonoBehaviour
     }
 
     //대기 상태
-    private class IbleState : Monster        //현재 플레이어는 대기 상태로 만들기 등록
+    private class IbleState : Monster        //현재 몬스터는 대기 상태로 만들기 등록
     {
-        //Character 데이터 받기
+        //Monsters 데이터 받기
         public IbleState(Monsters owner) : base(owner) { }
 
         public override void Update()
@@ -212,21 +212,20 @@ public class Monsters : MonoBehaviour
             Debug.Log(dir.x);
             if (dir.x > 0)
             {
-                owner.srr.flipX = true;
+                owner.srr.flipX = false;
                
             }
             else
             {
-                owner.srr.flipX = false;
+                owner.srr.flipX = true;
             }
-            Vector2 attackDirection = srr.flipX ? Vector2.right : Vector2.left;
+            Vector2 attackDirection = srr.flipX ? Vector2.left : Vector2.right;
             Vector2 rayStart = (Vector2)transform.position + attackDirection;
             RaycastHit2D hit = Physics2D.Raycast(rayStart, attackDirection, owner.attackLength);
             //나는 지금 적을 만나버렸어요 공격하겠습니다
            
-            if(hit.collider != null && hit.collider.CompareTag("Enemy"))
-            {
-               
+            if(hit.collider != null && hit.collider.CompareTag("Player"))
+            {               
                 ChangeState(State.Attack);
                 return;
             }
