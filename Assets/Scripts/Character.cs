@@ -231,33 +231,39 @@ public class Character : MonoBehaviour
     {
         // 생성자: Character 데이터 받기
         public TraceState(Character owner) : base(owner) { }
-
+        Vector2 dir;
+        Vector2 attackDir;
+        Vector2 rayStart;
+        RaycastHit2D hit;
         public override void Update()
         {
-
-            if (target == null) // Ible에서 설정된 타겟
-            {
-                ChangeState(State.Return);
-                return;
-            }
-
             // target 따라가기
-            Vector2 dir = (target.position - transform.position).normalized;
+            dir = (target.position - transform.position).normalized;
             rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
             srr.flipX = dir.x > 0;
             ani.SetBool("Move", true);
 
             // 공격 감지
-            Vector2 attackDir = srr.flipX ? Vector2.left : Vector2.right;
-            Vector2 rayStart = (Vector2)transform.position + attackDir;
-            RaycastHit2D hit = Physics2D.Raycast(rayStart, attackDir, attackLength);
+            attackDir = srr.flipX ? Vector2.left : Vector2.right;
+            rayStart = (Vector2)transform.position + attackDir;
+            hit = Physics2D.Raycast(rayStart, attackDir, attackLength);
+        }
+
+        public override void Transition()
+        {
             if (hit.collider != null && hit.collider.CompareTag("Enemy"))
             {
                 ChangeState(State.Attack);
                 return;
             }
 
+            if (target == null) // Ible에서 설정된 타겟
+            {
+                ChangeState(State.Return);
+                return;
+            }
         }
+
     }
 
 

@@ -196,5 +196,4 @@ MonoBehaviour:
   chspeed: 5
   enemyRadius: 15
   attackLength: 0.1
-  target: {fileID: 0}
-  enemy: []
+  target: {fileID: 4732168451511891310, guid: 72cda4c1899c4804c8489253a8e3d7a6, type: 3}

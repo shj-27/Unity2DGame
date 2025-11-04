@@ -41,11 +41,10 @@ public class Monsters : MonoBehaviour
     [SerializeField] private float attackLength;
 
 
-    //타겟(적)
+    //타겟(플레이어)
     [SerializeField] private Transform target;
 
-    //적은 다수 가까운 적을 먼저 때리게 만들기 위해 만들어진 놈
-    [SerializeField] private GameObject[] enemy;
+   
 
     private Animator ani;
 
@@ -203,34 +202,32 @@ public class Monsters : MonoBehaviour
     {
         // 생성자: Monster 데이터 받기
         public TraceState(Monsters owner) : base(owner) { }
-
+        Vector2 attackDirection;
+        Vector2 rayStart;
+        RaycastHit2D hit;
+        Vector2 dir;
         public override void Update()
         {
-            owner.ani.SetBool("Move", true);
-            Vector2 dir = (target.position - transform.position).normalized;
-            rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
-            Debug.Log(dir.x);
-            if (dir.x > 0)
-            {
-                owner.srr.flipX = false;
-               
-            }
-            else
-            {
-                owner.srr.flipX = true;
-            }
-            Vector2 attackDirection = srr.flipX ? Vector2.left : Vector2.right;
-            Vector2 rayStart = (Vector2)transform.position + attackDirection;
-            RaycastHit2D hit = Physics2D.Raycast(rayStart, attackDirection, owner.attackLength);
-            //나는 지금 적을 만나버렸어요 공격하겠습니다
            
-            if(hit.collider != null && hit.collider.CompareTag("Player"))
-            {               
+            owner.ani.SetBool("Move", true);
+            dir = (target.position - transform.position).normalized;
+            rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
+            
+            srr.flipX = dir.x < 0;
+            attackDirection = srr.flipX ? Vector2.left : Vector2.right;
+            rayStart = (Vector2)transform.position + attackDirection;
+            hit = Physics2D.Raycast(rayStart, attackDirection, owner.attackLength);
+        }
+
+        public override void Transition()
+        {
+            
+            if (hit.collider != null && hit.collider.CompareTag("Player"))
+            {
                 ChangeState(State.Attack);
                 return;
             }
-           
-        }   
+        }
     }
 
 
