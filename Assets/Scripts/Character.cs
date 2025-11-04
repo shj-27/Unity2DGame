@@ -187,6 +187,7 @@ public class Character : MonoBehaviour
 
         public override void Update()
         {
+           
             owner.ani.SetBool("Move", false);
         }
 
@@ -235,33 +236,45 @@ public class Character : MonoBehaviour
         Vector2 attackDir;
         Vector2 rayStart;
         RaycastHit2D hit;
-        public override void Update()
+        bool Timing = false;
+        public override void FixedUpdate()
         {
-            // target 따라가기
+           
+            // 이동
             dir = (target.position - transform.position).normalized;
             rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
-            srr.flipX = dir.x > 0;
+            srr.flipX = dir.x > 0; //
             ani.SetBool("Move", true);
 
-            // 공격 감지
+            // 공격 감지 (Raycast)
             attackDir = srr.flipX ? Vector2.left : Vector2.right;
             rayStart = (Vector2)transform.position + attackDir;
-            hit = Physics2D.Raycast(rayStart, attackDir, attackLength);
+            RaycastHit2D hit = Physics2D.Raycast(rayStart, attackDir, attackLength);
+            
+            if (hit.collider != null && hit.collider.CompareTag("Enemy"))
+            {
+                Timing=true;
+                return;
+            }
         }
 
         public override void Transition()
         {
-            if (hit.collider != null && hit.collider.CompareTag("Enemy"))
+
+            if (Timing)
             {
-                ChangeState(State.Attack);
+                
+                ChangeState(State.Attack); //공격
                 return;
             }
 
-            if (target == null) // Ible에서 설정된 타겟
+            // 타겟 사라짐 → 복귀
+            if (target == null)
             {
                 ChangeState(State.Return);
-                return;
             }
+
+
         }
 
     }
@@ -273,7 +286,7 @@ public class Character : MonoBehaviour
 
         public ReturnState(Character owner) : base(owner) { }
 
-        public override void Update()
+        public override void FixedUpdate()
         {
             // Update: 시작 위치로 이동
             Vector2 dir = ((Vector3)startPos - transform.position).normalized;
@@ -304,6 +317,7 @@ public class Character : MonoBehaviour
 
             rb.velocity = Vector2.zero;
             timer = 0;
+            owner.ani.SetBool("Move", false);
             owner.ani.SetTrigger("Attack");
         }
 

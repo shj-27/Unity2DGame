@@ -213,15 +213,18 @@ public class Monsters : MonoBehaviour
             dir = (target.position - transform.position).normalized;
             rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
             
+            
+        }
+        public override void FixedUpdate()
+        {
             srr.flipX = dir.x < 0;
             attackDirection = srr.flipX ? Vector2.left : Vector2.right;
             rayStart = (Vector2)transform.position + attackDirection;
             hit = Physics2D.Raycast(rayStart, attackDirection, owner.attackLength);
         }
-
         public override void Transition()
         {
-            
+           
             if (hit.collider != null && hit.collider.CompareTag("Player"))
             {
                 ChangeState(State.Attack);
@@ -232,27 +235,7 @@ public class Monsters : MonoBehaviour
 
 
     //복귀 상태
-    private class ReturnState : Monster
-    {
-       
-        public ReturnState(Monsters owner) : base(owner) { }
-
-        public override void Update()
-        {
-            // Update: 시작 위치로 이동
-            Vector2 dir = ((Vector3)startPos - transform.position).normalized;
-            transform.Translate(dir * chspeed * Time.deltaTime, Space.World);
-        }
-
-        public override void Transition()
-        {
-            // Transition: 시작 위치 도달 시 Idle 상태로 전이
-            if (Vector2.Distance(startPos, transform.position) < 0.1f)
-            {
-                ChangeState(State.Ible);
-            }
-        }
-    }
+    
 
     private class AttackState : Monster
     {
@@ -268,6 +251,7 @@ public class Monsters : MonoBehaviour
             
             rb.velocity = Vector2.zero;
             timer = 0;
+            owner.ani.SetBool("Move", false);
             owner.ani.SetTrigger("Attack");
         }
 
