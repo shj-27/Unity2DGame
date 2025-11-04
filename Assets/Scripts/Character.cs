@@ -4,6 +4,7 @@ using Unity.Burst.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
+using static UnityEngine.GraphicsBuffer;
 
 
 public class Character : MonoBehaviour
@@ -36,18 +37,14 @@ public class Character : MonoBehaviour
     // 캐릭터의 시작 위치
     private Vector2 startPos;
 
+    private Transform target;
 
     //적을 만나게 되면 공격 애니메이션 발동
     private RaycastHit2D attack;
     [SerializeField] private float attackLength;
 
-
-    //타겟(적)
-    [SerializeField] private Transform target;
-
     //적은 다수 가까운 적을 먼저 때리게 만들기 위해 만들어진 놈
-    [SerializeField] private GameObject[] enemy;
-
+    private List<Monsters> monsterInRange = new List<Monsters>();
     private Animator ani;
 
     private void Awake()
@@ -75,10 +72,9 @@ public class Character : MonoBehaviour
     void Start()
     {
         // 타겟 초기화: Enemy 태그 오브젝트 찾기, null 체크
-        if (target == null)
-        {
-            target = GameObject.FindWithTag("Enemy")?.transform;
-        }
+        //Monsters target = ;
+        //if (target == null) return; //타겟이 없다면 아무것도 하지말기
+        //monsterInRange;
         // 시작 위치 저장
         startPos = transform.position;
     }
@@ -102,6 +98,44 @@ public class Character : MonoBehaviour
         
     }
 
+    //적 감지
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.TryGetComponent<Monsters>(out var monster) && !monsterInRange.Contains(monster))
+            monsterInRange.Add(monster); // 사거리 안 → 리스트 추가
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.TryGetComponent<Monsters>(out var monster))
+            monsterInRange.Remove(monster); // 사거리 밖 → 리스트 제거
+    }
+
+    private Monsters GetNearMoneter()  //애는 가까운 몬스터를 찾는 역할!
+    {
+        if (monsterInRange.Count == 0) return null; // 몬스터 없으면 null 반환
+
+        Monsters nearMonster = null;             // 가장 가까운 몬스터 저장용
+        float nearDist = Mathf.Infinity;            // 지금까지의 최소 거리 (무한대로 초기화)
+        Vector2 towerPos = transform.position;      // 타워 위치 (성능을 위해 매번 계산 방지)
+
+        // 사거리 안 모든 몬스터를 하나씩 확인
+        foreach (var monster in monsterInRange)
+        {
+            if (monster == null) continue;          // 몬스터가 죽어서 파괴된 경우 스킵
+
+            // 현재 몬스터와 타워 사이 거리 계산
+            float dist = Vector2.Distance(towerPos, monster.transform.position);
+
+            // 더 가까운 몬스터 발견 시 갱신
+            if (dist < nearDist)
+            {
+                nearDist = dist;        // 최소 거리 갱신
+                nearMonster = monster;  // 가장 가까운 몬스터 갱신
+            }
+        }
+        return nearMonster; // 최종적으로 가장 가까운 몬스터 반환
+    }
 
     // Player: 상태 클래스의 중간 부모
     private class Player : CharacterMainState   //StateMachine의 CharacterMainState클래스와 상속 중 확인
@@ -121,16 +155,15 @@ public class Character : MonoBehaviour
             get { return owner.chspeed; }   //속도 가져오기
         }
 
-        // 타겟 Transform 속성
-        protected Transform target
-        {
-            get { return owner.target; }    //대상 타겟 가져오기
-        }
-
         // 시작 위치 속성
         protected Vector2 startPos
         {
             get { return owner.startPos; }  //위치 선정
+        }
+
+        protected Transform target
+        {
+            get { return owner.target; }  //위치 선정
         }
 
         // 적 감지 범위 속성
@@ -166,6 +199,11 @@ public class Character : MonoBehaviour
             get { return owner.ani; }
         }
 
+        public List<Monsters> monsterInRange
+        {
+            get { return owner.monsterInRange; }
+        }
+
         // 생성자: Character 데이터 저장
         public Player(Character owner)
         {
@@ -175,9 +213,10 @@ public class Character : MonoBehaviour
        
 
     }
+   
 
     //대기 상태
-    private class IbleState : Player        //현재 플레이어는 대기 상태로 만들기 등록
+    private class IbleState : Player        //현재 플레이어는 대기 상태로 만들기 등록 and GetNearMoneter()에서 가까운 몬스터를 추격하도록만들기
     {
         //Character 데이터 받기
         public IbleState(Character owner) : base(owner) { }
@@ -189,13 +228,12 @@ public class Character : MonoBehaviour
         
         public override void Transition()
         {
-           
-
-            //플레이어가 일정거리 안에 들어오면 추적상태로 전환
-            if (Vector2.Distance(target.position, transform.position) < enemyRadius)
+            // monsterInRange의 리스트에 적이 있다면 감지 추격하기 시작
+            if (monsterInRange.Count > 0)
             {
                 ChangeState(State.Trace);
             }
+
         }
     }
 
@@ -208,8 +246,17 @@ public class Character : MonoBehaviour
 
         public override void Update()
         {
+
+            
             owner.ani.SetBool("Move", true);
-            Vector2 dir = (target.position - transform.position).normalized;
+            // 가까운 적 찾기!
+            Monsters nearest = owner.GetNearMoneter();
+            if (nearest == null)
+            {
+                ChangeState(State.Return);
+                return;
+            }
+            Vector2 dir = (transform.position).normalized;
             rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
             Debug.Log(dir.x);
             if (dir.x > 0)
@@ -221,6 +268,7 @@ public class Character : MonoBehaviour
             {
                 owner.srr.flipX = false;
             }
+
             Vector2 attackDirection = srr.flipX ? Vector2.right : Vector2.left;
             Vector2 rayStart = (Vector2)transform.position + attackDirection;
             RaycastHit2D hit = Physics2D.Raycast(rayStart, attackDirection, owner.attackLength);
@@ -245,9 +293,40 @@ public class Character : MonoBehaviour
 
         public override void Update()
         {
-            // Update: 시작 위치로 이동
-            Vector2 dir = ((Vector3)startPos - transform.position).normalized;
-            transform.Translate(dir * chspeed * Time.deltaTime, Space.World);
+            if (monsterInRange.Count == 0) return;  // 몬스터 없으면 null 반환
+
+            Monsters nearest = null;             // 가장 가까운 몬스터 저장용
+            float minDist = Mathf.Infinity;         // 지금까지의 최소 거리 (무한대로 초기화)
+            Vector2 myPos = transform.position;   // 유닛 위치 (성능을 위해 매번 계산 방지)
+            foreach (var m in monsterInRange)
+            {
+                if (m == null) continue;
+                float dist = Vector2.Distance(myPos, m.transform.position);
+                if (dist < minDist)
+                {
+                    minDist = dist;
+                    nearest = m;
+                }
+            }
+
+            // === 추적 ===
+            if (nearest != null)
+            {
+                owner.target = nearest.transform;
+                Vector2 dir = (owner.target.position - transform.position).normalized;
+                rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
+                srr.flipX = dir.x < 0;
+                ani.SetBool("Move", true);
+
+                // === 공격 감지 ===
+                Vector2 attackDir = srr.flipX ? Vector2.left : Vector2.right;
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, attackDir, attackLength);
+                if (hit.collider != null && hit.collider.CompareTag("Enemy"))
+                {
+                    ChangeState(State.Attack);
+                    return;
+                }
+            }
         }
 
         public override void Transition()
