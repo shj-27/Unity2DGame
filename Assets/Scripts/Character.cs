@@ -40,7 +40,7 @@ public class Character : MonoBehaviour
 
 
 
-    [SerializeField] private float attackLength;
+    
 
 
     [SerializeField] private DetectionZone detectionZone;
@@ -49,6 +49,11 @@ public class Character : MonoBehaviour
     [SerializeField] private List<Monsters> monsterInRange => detectionZone.monsterInRange;
     private Animator ani;
 
+    //적을 만나게 되면 공격 애니메이션 발동
+    private Vector2 dir;
+    private Vector2 attackDir;
+    [SerializeField] private float attackLength;
+    private RaycastHit2D attack;
 
 
     private void Awake()
@@ -83,7 +88,9 @@ public class Character : MonoBehaviour
 
     void Update()
     {
-
+        attackDir = srr.flipX ? Vector2.right : Vector2.left;
+        attack = Physics2D.Raycast(transform.position, attackDir, attackLength);
+        Debug.DrawRay(transform.position, attackDir * attackLength, Color.red);
     }
 
     private void FixedUpdate()
@@ -235,9 +242,6 @@ public class Character : MonoBehaviour
         }
         public override void Transition()
         {
-
-           
-
             // 타겟 사라짐 → 복귀
             if (target == null)
             {
