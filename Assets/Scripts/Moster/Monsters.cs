@@ -186,8 +186,6 @@ public class Monsters : MonoBehaviour
         
         public override void Transition()
         {
-           
-
             //플레이어가 살아있다면
             if (Vector2.Distance(target.position, transform.position) < enemyRadius)
             {
@@ -204,39 +202,36 @@ public class Monsters : MonoBehaviour
         public TraceState(Monsters owner) : base(owner) { }
         Vector2 attackDirection;
         Vector2 rayStart;
-        RaycastHit2D hit;
         Vector2 dir;
-        public override void Update()
+
+        public override void Enter()   //공격 애니메이션
         {
-           
             owner.ani.SetBool("Move", true);
-            dir = (target.position - transform.position).normalized;
-            rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
-            
-            
         }
+
         public override void FixedUpdate()
         {
+            dir = (target.position - transform.position).normalized;
+            rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
+
             srr.flipX = dir.x < 0;
             attackDirection = srr.flipX ? Vector2.left : Vector2.right;
             rayStart = (Vector2)transform.position + attackDirection;
-            hit = Physics2D.Raycast(rayStart, attackDirection, owner.attackLength);
+            owner.attack = Physics2D.Raycast(rayStart, attackDirection, owner.attackLength);
+
+            
         }
         public override void Transition()
         {
-           
-            if (hit.collider != null && hit.collider.CompareTag("Player"))
+            if (owner.attack.collider != null && owner.attack.collider.CompareTag("Player"))//감지된놈이 플레이어라면 공격
             {
                 ChangeState(State.Attack);
                 return;
             }
+
         }
     }
-
-
-    //복귀 상태
     
-
     private class AttackState : Monster
     {
         private float attackDuration = 0.5f; // 공격 애니메이션 길이

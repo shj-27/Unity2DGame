@@ -87,7 +87,7 @@ public class CharacterMainState //상태 등록을 위한 클래스
     ///////////////////////////////////
     public virtual void Enter() { }
     public virtual void Update() { }
-    public virtual void LateUpdate() { }
+    public virtual void LateUpdate() { }    
     public virtual void FixedUpdate() { }
     public virtual void Exit() { }
     public virtual void Transition() { }

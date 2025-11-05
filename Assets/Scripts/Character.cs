@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Burst.CompilerServices;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
+
 
 
 public class Character : MonoBehaviour
@@ -27,20 +25,21 @@ public class Character : MonoBehaviour
     [SerializeField] private float enemyRadius;
 
     //스프라이트(좌우 변경 위해서 필수)
-    private SpriteRenderer srr;
+    public SpriteRenderer srr;
     //땅 위에서 다녀야하니 필수
     private Rigidbody2D rb;
 
     // 상태 머신 컴포넌트
     private StateMachine stateMachine;
+
     // 캐릭터의 시작 위치
     private Vector2 startPos;
 
     //적대상
     private Transform target;
 
-    //적을 만나게 되면 공격 애니메이션 발동
-    private RaycastHit2D attack;
+
+
     [SerializeField] private float attackLength;
 
 
@@ -50,7 +49,7 @@ public class Character : MonoBehaviour
     [SerializeField] private List<Monsters> monsterInRange => detectionZone.monsterInRange;
     private Animator ani;
 
-    
+
 
     private void Awake()
     {
@@ -74,35 +73,27 @@ public class Character : MonoBehaviour
         stateMachine.InitState(State.Ible);
 
         detectionZone = GetComponentInChildren<DetectionZone>();
-       
+
     }
 
     void Start()
     {
-
         startPos = transform.position;
     }
 
     void Update()
     {
-        // 캐릭터가 오른쪽을 보는 경우 (flipX = false)
-        Vector2 attackDirection = srr.flipX ? Vector2.right : Vector2.left;
 
-        // Raycast 방향을 캐릭터 방향에 따라 변경
-        attack = Physics2D.Raycast(transform.position, attackDirection, attackLength);
-
-        // Debug Ray도 동일한 방향으로 표시
-        Debug.DrawRay(transform.position, attackDirection * attackLength, Color.red);
-
-       
     }
 
     private void FixedUpdate()
     {
-        
+
+
     }
 
-   
+
+
 
 
     // Player: 상태 클래스의 중간 부모
@@ -147,10 +138,7 @@ public class Character : MonoBehaviour
         }
 
         //공격관련
-        public RaycastHit2D attack
-        {
-            get { return owner.attack; }
-        }
+       
 
         public float attackLength
         {
@@ -232,50 +220,34 @@ public class Character : MonoBehaviour
     {
         // 생성자: Character 데이터 받기
         public TraceState(Character owner) : base(owner) { }
-        Vector2 dir;
-        Vector2 attackDir;
-        Vector2 rayStart;
-        RaycastHit2D hit;
-        bool Timing = false;
+        
+
+
+        public override void Enter()
+        {
+            owner.ani.SetBool("Move", true);
+        }
         public override void FixedUpdate()
         {
-           
-            // 이동
-            dir = (target.position - transform.position).normalized;
+            Vector2 dir = (target.position - transform.position).normalized;
             rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
-            srr.flipX = dir.x > 0; //
-            ani.SetBool("Move", true);
-
-            // 공격 감지 (Raycast)
-            attackDir = srr.flipX ? Vector2.left : Vector2.right;
-            rayStart = (Vector2)transform.position + attackDir;
-            RaycastHit2D hit = Physics2D.Raycast(rayStart, attackDir, attackLength);
-            
-            if (hit.collider != null && hit.collider.CompareTag("Enemy"))
-            {
-                Timing=true;
-                return;
-            }
+            srr.flipX = dir.x > 0;
         }
-
         public override void Transition()
         {
 
-            if (Timing)
-            {
-                
-                ChangeState(State.Attack); //공격
-                return;
-            }
+           
 
             // 타겟 사라짐 → 복귀
             if (target == null)
             {
                 ChangeState(State.Return);
+                return;
             }
 
-
         }
+
+      
 
     }
 
@@ -285,6 +257,11 @@ public class Character : MonoBehaviour
     {
 
         public ReturnState(Character owner) : base(owner) { }
+
+        public override void Enter()
+        {
+            owner.ani.SetBool("Move", true);
+        }
 
         public override void FixedUpdate()
         {
