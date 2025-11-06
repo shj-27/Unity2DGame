@@ -90,13 +90,21 @@ public class Monsters : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // 캐릭터가 오른쪽을 보는 경우 (flipX = false)
-        attackDirection = srr.flipX ? Vector2.left : Vector2.right;
+        if (target != null)
+        {
+            Vector2 playerDir = (target.position - transform.position).normalized;
+            attackDirection = playerDir; // ← 항상 플레이어 방향!
+
+        }
+        else
+        {
+            attackDirection = srr.flipX ? Vector2.left : Vector2.right; // 백업
+        }
 
         // Raycast 방향을 캐릭터 방향에 따라 변경
         attack = Physics2D.Raycast(transform.position, attackDirection, attackLength, LayerMask.GetMask("Player"));
-        
-
+        Vector2 dir = (target.position - transform.position).normalized;
+        srr.flipX = dir.x < 0;
         // Debug Ray도 동일한 방향으로 표시
         Debug.DrawRay(transform.position, attackDirection * attackLength, Color.red);
 
@@ -218,7 +226,7 @@ public class Monsters : MonoBehaviour
 
         public override void Enter()   //공격 애니메이션
         {
-            ani.Play("Idle", -1, 0f);
+            
             ani.ResetTrigger("Attack");
             owner.ani.SetBool("Move", true);
         }
@@ -256,6 +264,11 @@ public class Monsters : MonoBehaviour
         public override void Enter()   //공격 애니메이션
         {
             //공격 애니메이션 공격할 때 그 자리에서 공격하기
+            //공격 방향
+            Vector2 dir = (target.position - transform.position).normalized;
+
+            // 플레이어 방향
+            srr.flipX = dir.x < 0;
 
             rb.velocity = Vector2.zero;
             timer = 0;
