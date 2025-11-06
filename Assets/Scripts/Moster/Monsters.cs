@@ -32,7 +32,7 @@ public class Monsters : MonoBehaviour
    
     // 상태 머신 컴포넌트
     private StateMachine stateMachine;
-    // 캐릭터의 시작 위치
+    // 몬스터의 시작 위치
     private Vector2 startPos;
 
 
@@ -43,8 +43,10 @@ public class Monsters : MonoBehaviour
 
     //타겟(플레이어)
     [SerializeField] private Transform target;
+    Vector2 attackDirection;
+    Vector2 rayStart;
+    Vector2 dir;
 
-   
 
     private Animator ani;
 
@@ -82,21 +84,21 @@ public class Monsters : MonoBehaviour
 
     void Update()
     {
-        // 캐릭터가 오른쪽을 보는 경우 (flipX = false)
-        Vector2 attackDirection = srr.flipX ? Vector2.left : Vector2.right;
-        
-        // Raycast 방향을 캐릭터 방향에 따라 변경
-        attack = Physics2D.Raycast(transform.position, attackDirection, attackLength);
-
-        // Debug Ray도 동일한 방향으로 표시
-        Debug.DrawRay(transform.position, attackDirection * attackLength, Color.red);
+       
 
      
     }
 
     private void FixedUpdate()
     {
-        
+        // 캐릭터가 오른쪽을 보는 경우 (flipX = false)
+        attackDirection = srr.flipX ? Vector2.left : Vector2.right;
+
+        // Raycast 방향을 캐릭터 방향에 따라 변경
+        attack = Physics2D.Raycast(transform.position, attackDirection, attackLength);
+
+        // Debug Ray도 동일한 방향으로 표시
+        Debug.DrawRay(transform.position, attackDirection * attackLength, Color.red);
     }
 
 
@@ -200,9 +202,8 @@ public class Monsters : MonoBehaviour
     {
         // 생성자: Monster 데이터 받기
         public TraceState(Monsters owner) : base(owner) { }
-        Vector2 attackDirection;
-        Vector2 rayStart;
-        Vector2 dir;
+      
+        
 
         public override void Enter()   //공격 애니메이션
         {
@@ -211,13 +212,10 @@ public class Monsters : MonoBehaviour
 
         public override void FixedUpdate()
         {
-            dir = (target.position - transform.position).normalized;
+            Vector2 dir = (target.position - transform.position).normalized;
             rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
-
             srr.flipX = dir.x < 0;
-            attackDirection = srr.flipX ? Vector2.left : Vector2.right;
-            rayStart = (Vector2)transform.position + attackDirection;
-            owner.attack = Physics2D.Raycast(rayStart, attackDirection, owner.attackLength);
+            
 
             
         }
@@ -229,21 +227,23 @@ public class Monsters : MonoBehaviour
                 return;
             }
 
+            
+
         }
     }
-    
+
     private class AttackState : Monster
     {
         private float attackDuration = 0.5f; // 공격 애니메이션 길이
         private float timer;
-        
+
 
         public AttackState(Monsters owner) : base(owner) { }
 
         public override void Enter()   //공격 애니메이션
         {
             //공격 애니메이션 공격할 때 그 자리에서 공격하기
-            
+
             rb.velocity = Vector2.zero;
             timer = 0;
             owner.ani.SetBool("Move", false);
@@ -252,22 +252,28 @@ public class Monsters : MonoBehaviour
 
         public override void Update()  //데미지 처리
         {
-           
+
             timer += Time.deltaTime; //공격딜레이 시작
             if (timer > attackDuration)
             {
-                owner.srr.flipX = false;    
-                
+                owner.srr.flipX = false;
+
                 timer = 0;
                 ChangeState(State.Ible);
             }
 
-            
+
         }
 
-       
+        public override void Transition()
+        {
+            if (owner.attack.collider == null)
+            {
+                ChangeState(State.Ible);
+                return;
+            }
 
-        
+        }
     }
 
     private  class DieState : Monster

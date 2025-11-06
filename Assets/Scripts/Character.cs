@@ -1,3 +1,4 @@
+using System.Buffers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,59 +17,54 @@ public class Character : MonoBehaviour
         Hit,    // 데미지를 받음
         Die     // 캐릭터 사망
     }
-
+    // 상태 머신 컴포넌트
+    private StateMachine stateMachine;
 
 
     //이동 속도
     [SerializeField] private float chspeed;
-    //적 감지 범위
-    [SerializeField] private float enemyRadius;
 
     //스프라이트(좌우 변경 위해서 필수)
-    public SpriteRenderer srr;
+    private SpriteRenderer srr;
     //땅 위에서 다녀야하니 필수
     private Rigidbody2D rb;
-
-    // 상태 머신 컴포넌트
-    private StateMachine stateMachine;
 
     // 캐릭터의 시작 위치
     private Vector2 startPos;
 
-    //적대상
-    private Transform target;
-
-
 
     
-
-
     [SerializeField] private DetectionZone detectionZone;
 
     //적은 다수 가까운 적을 먼저 때리게 만들기 위해 만들어진 놈
     [SerializeField] private List<Monsters> monsterInRange => detectionZone.monsterInRange;
-    private Animator ani;
-
+    private Monsters nearest = null;
+    [SerializeField] private int enemyCount;
     //적을 만나게 되면 공격 애니메이션 발동
-    private Vector2 dir;
-    private Vector2 attackDir;
-    [SerializeField] private float attackLength;
-    private RaycastHit2D attack;
+    private Vector2 attackDir;                      //이동
+    [SerializeField] private float attackLength;    //범위
+    private RaycastHit2D attack;                    //공격
+    public bool isInAttackRange = false;            //공격확인
+    public LayerMask layerMask;                     //공격대상
+    private Transform target;                       //가까운 적대상
 
+    //애니
+    private Animator ani;
 
     private void Awake()
     {
-        // 컴포넌트 초기화: SpriteRenderer 가져오기
+        // SpriteRenderer 가져오기
         srr = GetComponent<SpriteRenderer>();
-        // 컴포넌트 초기화: Rigidbody2D 가져오기
+        // Rigidbody2D 가져오기
         rb = GetComponent<Rigidbody2D>();
+        // Animator 가져오기
+        ani = GetComponent<Animator>();
+
         // StateMachine 컴포넌트 동적 추가
         stateMachine = gameObject.AddComponent<StateMachine>();
 
-        ani = GetComponent<Animator>();
 
-
-        // 상태 등록: Idle 상태, Character 데이터를 StateMachine한테 전달
+        // 상태 등록: 상태, Character 데이터를 StateMachine한테 전달
         stateMachine.AddState(State.Ible, new IbleState(this));
         stateMachine.AddState(State.Attack, new AttackState(this));
         stateMachine.AddState(State.Trace, new TraceState(this));
@@ -80,7 +76,7 @@ public class Character : MonoBehaviour
         detectionZone = GetComponentInChildren<DetectionZone>();
 
     }
-
+  
     void Start()
     {
         startPos = transform.position;
@@ -88,18 +84,57 @@ public class Character : MonoBehaviour
 
     void Update()
     {
-        attackDir = srr.flipX ? Vector2.right : Vector2.left;
-        attack = Physics2D.Raycast(transform.position, attackDir, attackLength);
-        Debug.DrawRay(transform.position, attackDir * attackLength, Color.red);
+       
     }
 
     private void FixedUpdate()
     {
 
+        //가장 가까운 몬스터 찾기 시작
+        float nearestDist = Mathf.Infinity; // 지금까지 최소 거리 (초기값: 무한대)
+        nearest = null;         //대상 리셋
+        enemyCount = 0;         //몬스터 수 리셋
+        //사거리 안 모든 몬스터 하나씩 확인
+        foreach (var monster in monsterInRange)
+        {
+            enemyCount++;
+            // 죽어서 사라진 몬스터는 건너뜀
+            if (monster == null) continue;
 
+            // 캐릭터와 몬스터 사이 거리 계산
+            float dist = Vector2.Distance(transform.position, monster.transform.position);
+
+            // 더 가까운 몬스터 발견 → 갱신
+            if (dist < nearestDist)
+            {
+                
+                nearestDist = dist;    // 최소 거리 갱신
+                nearest = monster;     // 가장 가까운 몬스터 갱신
+                
+            }
+           
+
+        }
+
+        attackDir = srr.flipX ? Vector2.right : Vector2.left;
+        attack = Physics2D.Raycast(transform.position, attackDir, attackLength, LayerMask.GetMask("Enemy"));
+        
+
+        if (attack.collider != null)
+        {
+            
+            isInAttackRange = true;
+        }
+        if (attack.collider == null )
+        {
+            isInAttackRange = false;
+        }
     }
 
-
+    private void OnDrawGizmosSelected()
+    {
+        Debug.DrawRay(transform.position, attackDir * attackLength, Color.red);
+    }
 
 
 
@@ -127,12 +162,6 @@ public class Character : MonoBehaviour
             get { return owner.startPos; }  //위치 선정
         }
 
-        // 적 감지 범위 속성
-        protected float enemyRadius
-        {
-            get { return owner.enemyRadius; }   //적 감지범위
-        }
-
 
         public Rigidbody2D rb
         {
@@ -145,7 +174,14 @@ public class Character : MonoBehaviour
         }
 
         //공격관련
-       
+        public int enemyCount
+        {
+            get { return owner.enemyCount; }
+        }
+        public bool isInAttackRange
+        {
+            get { return owner.isInAttackRange; }
+        }
 
         public float attackLength
         {
@@ -159,9 +195,9 @@ public class Character : MonoBehaviour
 
         public Transform target
         { get { return owner.target; } }
-        public List<Monsters> monsterInRange
+        public Monsters nearest
         {
-            get { return owner.monsterInRange; }
+            get { return owner.nearest; }
         }
 
         // 생성자: Character 데이터 저장
@@ -170,6 +206,7 @@ public class Character : MonoBehaviour
             this.owner = owner;
         }
 
+        
 
 
     }
@@ -180,44 +217,26 @@ public class Character : MonoBehaviour
         //Character 데이터 받기
         public IbleState(Character owner) : base(owner) { }
 
-        public override void Update()
+        public override void Enter()
         {
-           
-            owner.ani.SetBool("Move", false);
+            
+            ani.SetBool("Move", false);
+            ani.ResetTrigger("Attack");
+            ani.Play("Idle", -1, 0f);
+            rb.velocity = Vector2.zero;
         }
 
         public override void Transition()
         {
-
-            //가장 가까운 몬스터 찾기 시작
-            Monsters nearest = null;           // 가장 가까운 몬스터 저장
-            float nearestDist = Mathf.Infinity; // 지금까지 최소 거리 (초기값: 무한대)
-
-            //사거리 안 모든 몬스터 하나씩 확인
-            foreach (var monster in monsterInRange)
-            {
-                // 죽어서 사라진 몬스터는 건너뜀
-                if (monster == null) continue;
-
-                // 캐릭터와 몬스터 사이 거리 계산
-                float dist = Vector2.Distance(transform.position, monster.transform.position);
-
-                // 더 가까운 몬스터 발견 → 갱신
-                if (dist < nearestDist)
-                {
-                    nearestDist = dist;    // 최소 거리 갱신
-                    nearest = monster;     // 가장 가까운 몬스터 갱신
-                }
-               
-            }
-
             //추적 시작
             if (nearest != null)
             {
+               
                 owner.target = nearest.transform;  // 타겟 설정
                 ChangeState(State.Trace);          // 추적 상태로 전이
+                
             }
-
+           
         }
     }
 
@@ -232,6 +251,7 @@ public class Character : MonoBehaviour
 
         public override void Enter()
         {
+           
             owner.ani.SetBool("Move", true);
         }
         public override void FixedUpdate()
@@ -239,19 +259,19 @@ public class Character : MonoBehaviour
             Vector2 dir = (target.position - transform.position).normalized;
             rb.velocity = new Vector2(dir.x * chspeed, rb.velocity.y);
             srr.flipX = dir.x > 0;
-        }
-        public override void Transition()
-        {
-            // 타겟 사라짐 → 복귀
-            if (target == null)
+
+            if (isInAttackRange)
             {
-                ChangeState(State.Return);
-                return;
+                ChangeState(State.Attack);
+                
             }
+           
 
+           
         }
+       
 
-      
+
 
     }
 
@@ -265,6 +285,7 @@ public class Character : MonoBehaviour
         public override void Enter()
         {
             owner.ani.SetBool("Move", true);
+            
         }
 
         public override void FixedUpdate()
@@ -280,8 +301,11 @@ public class Character : MonoBehaviour
             if (Vector2.Distance(startPos, transform.position) < 0.1f)
             {
                 ChangeState(State.Ible);
+                return;
             }
         }
+
+
     }
 
     private class AttackState : Player
@@ -299,25 +323,36 @@ public class Character : MonoBehaviour
             rb.velocity = Vector2.zero;
             timer = 0;
             owner.ani.SetBool("Move", false);
-            owner.ani.SetTrigger("Attack");
+            
         }
 
         public override void Update()  //데미지 처리
         {
+            
 
             timer += Time.deltaTime; //공격딜레이 시작
             if (timer > attackDuration)
             {
-                owner.srr.flipX = false;
-
+                
                 timer = 0;
-                ChangeState(State.Ible);
+                owner.ani.SetTrigger("Attack");
             }
 
+            
 
         }
 
+        public override void Transition()
+        {
+            if (enemyCount <= 0)
+            {
+                ChangeState(State.Ible);
+               
+            }
 
+           
+
+        }
 
 
     }
