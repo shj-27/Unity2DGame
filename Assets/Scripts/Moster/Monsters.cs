@@ -193,6 +193,7 @@ public class Monsters : MonoBehaviour
 
         public override void Update()
         {
+            owner.ani.SetTrigger("Attack");
             owner.ani.SetBool("Move", false);
         }
         
@@ -217,6 +218,8 @@ public class Monsters : MonoBehaviour
 
         public override void Enter()   //공격 애니메이션
         {
+            ani.Play("Idle", -1, 0f);
+            ani.ResetTrigger("Attack");
             owner.ani.SetBool("Move", true);
         }
 
@@ -234,7 +237,7 @@ public class Monsters : MonoBehaviour
             if (isInAttackRange)//감지된놈이 플레이어라면 공격
             {
                 ChangeState(State.Attack);
-                return;
+                
             }
 
             
@@ -272,7 +275,11 @@ public class Monsters : MonoBehaviour
                 
             }
 
-
+            if (!isInAttackRange)//감지된놈이 플레이어라면 공격
+            {
+                ChangeState(State.Trace);
+                return;
+            }
         }
 
         public override void Transition()
