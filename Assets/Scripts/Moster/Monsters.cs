@@ -44,9 +44,8 @@ public class Monsters : MonoBehaviour
     //타겟(플레이어)
     [SerializeField] private Transform target;
     Vector2 attackDirection;
-    Vector2 rayStart;
-    Vector2 dir;
-
+    [SerializeField] LayerMask layerMask;
+    [SerializeField] bool isInAttackRange;
 
     private Animator ani;
 
@@ -95,10 +94,21 @@ public class Monsters : MonoBehaviour
         attackDirection = srr.flipX ? Vector2.left : Vector2.right;
 
         // Raycast 방향을 캐릭터 방향에 따라 변경
-        attack = Physics2D.Raycast(transform.position, attackDirection, attackLength);
+        attack = Physics2D.Raycast(transform.position, attackDirection, attackLength, LayerMask.GetMask("Player"));
+        
 
         // Debug Ray도 동일한 방향으로 표시
         Debug.DrawRay(transform.position, attackDirection * attackLength, Color.red);
+
+        if (attack.collider != null)
+        {
+
+            isInAttackRange = true;
+        }
+        if (attack.collider == null)
+        {
+            isInAttackRange = false;
+        }
     }
 
 
@@ -150,9 +160,9 @@ public class Monsters : MonoBehaviour
         }
 
         //공격관련
-        public RaycastHit2D attack
+        public bool isInAttackRange
         {
-            get { return owner.attack; }
+            get { return owner.isInAttackRange; }
         }
 
         public float attackLength
@@ -221,7 +231,7 @@ public class Monsters : MonoBehaviour
         }
         public override void Transition()
         {
-            if (owner.attack.collider != null && owner.attack.collider.CompareTag("Player"))//감지된놈이 플레이어라면 공격
+            if (isInAttackRange)//감지된놈이 플레이어라면 공격
             {
                 ChangeState(State.Attack);
                 return;
@@ -259,7 +269,7 @@ public class Monsters : MonoBehaviour
                 owner.srr.flipX = false;
 
                 timer = 0;
-                ChangeState(State.Ible);
+                
             }
 
 

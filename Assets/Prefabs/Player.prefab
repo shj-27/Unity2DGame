@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2324640962225029354}
   - component: {fileID: 313534071926090501}
   - component: {fileID: 8111867704935384026}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DetectionZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 8444379799324758449}
   - component: {fileID: 3732301390327320670}
   - component: {fileID: 8312408352267251097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -286,7 +286,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chspeed: 1
-  enemyRadius: 0
   detectionZone: {fileID: 8111867704935384026}
+  enemyCount: 0
   attackLength: 1.5
   isInAttackRange: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
