@@ -5,26 +5,22 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "MosterData", menuName = "SO/MonsterData")]
 public class MonsterData : ScriptableObject
 {
+    //몬스터 색
     public enum Colors
     {
         Red,
-        Blue, 
-        Green
+        Blue,
+        White
     }
+    public int monsterMaxHp;
+    public string[] monsterName;
+    public Colors color;
+    public List<GameObject> prefab;
+    
 
-    public string monsterName;
-    public string colors;
-    public int maxHp;
-    public float moveSpeed;
-    public GameObject prefab;
-    void Start()
+    public int Randoms(int a, int b)
     {
-        
-    }
-
-   
-    void Update()
-    {
-        
+        int ab = Random.Range(a, b);
+        return ab;
     }
 }

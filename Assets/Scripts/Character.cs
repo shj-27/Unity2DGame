@@ -17,6 +17,9 @@ public class Character : MonoBehaviour
         Hit,    // 데미지를 받음
         Die     // 캐릭터 사망
     }
+
+    
+    
     // 상태 머신 컴포넌트
     private StateMachine stateMachine;
 
@@ -45,8 +48,13 @@ public class Character : MonoBehaviour
     [SerializeField] private float attackLength;    //범위
     private RaycastHit2D attack;                    //공격
     public bool isInAttackRange = false;            //공격확인
-    public LayerMask layerMask;                     //공격대상
+    private LayerMask layerMask;                     //공격대상
     private Transform target;                       //가까운 적대상
+
+    //상태설정
+    [SerializeField] int situation;
+    [SerializeField] int weaponsituation;
+    public bool[] weapon = new bool[3];
 
     //애니
     private Animator ani;
@@ -80,11 +88,16 @@ public class Character : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
+        weaponsituation = 1;
     }
 
     void Update()
     {
-       
+
+        if (Input.GetKey(KeyCode.Escape)) situation = 0;
+        if (Input.GetKey(KeyCode.Alpha1)) situation = 1;
+        if (Input.GetKey(KeyCode.Alpha2)) situation = 2;
+        
     }
 
     private void FixedUpdate()
@@ -200,6 +213,16 @@ public class Character : MonoBehaviour
             get { return owner.nearest; }
         }
 
+        public int weaponsituation
+        {
+            get { return owner.weaponsituation; }
+        }
+
+        public bool[] weapon
+        {
+            get { return owner.weapon; }
+        }
+
         // 생성자: Character 데이터 저장
         public Player(Character owner)
         {
@@ -312,7 +335,7 @@ public class Character : MonoBehaviour
     {
         private float attackDuration = 0.5f; // 공격 애니메이션 길이
         private float timer;
-
+        private bool damageTriggered = false;
 
         public AttackState(Character owner) : base(owner) { }
 
@@ -323,22 +346,31 @@ public class Character : MonoBehaviour
             rb.velocity = Vector2.zero;
             timer = 0;
             owner.ani.SetBool("Move", false);
-            
+            damageTriggered = false;
+            ani.SetTrigger("Attack");
         }
 
         public override void Update()  //데미지 처리
         {
-            
 
-            timer += Time.deltaTime; //공격딜레이 시작
-            if (timer > attackDuration)
+
+            timer += Time.deltaTime;
+
+            // 애니 끝날 때 데미지 신호
+            if (timer > attackDuration && !damageTriggered)
             {
+                weapon[weaponsituation] = true;
+                damageTriggered = true;
                 
-                timer = 0;
-                owner.ani.SetTrigger("Attack");
             }
 
-            
+            // 다음 프레임에 OFF (MosterBase에서 감지 후 리셋)
+            if (timer > attackDuration + 0.1f)
+            {
+                weapon[weaponsituation] = false; // OFF
+                ChangeState(State.Ible);
+            }
+
 
         }
 
