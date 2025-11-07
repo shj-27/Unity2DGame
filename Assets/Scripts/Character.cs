@@ -53,7 +53,7 @@ public class Character : MonoBehaviour
 
     //상태설정
 
-    [SerializeField] int weaponsituation;
+    public int weaponsituation;
     public bool[] weapon = new bool[3];
     public bool damageTriggered = false;
     //애니
