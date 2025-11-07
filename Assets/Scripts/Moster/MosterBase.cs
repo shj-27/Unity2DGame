@@ -17,7 +17,8 @@ public class MosterBase : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     private Character character;
     private int mon;
-    private int currentMonsterId;
+    [SerializeField] private int currentMonsterId;
+    private bool[] monstering = new bool[3];
     // Start is called before the first frame update
 
     private void Awake()
@@ -29,20 +30,7 @@ public class MosterBase : MonoBehaviour
     void Start()
     {
         SpawnNewMonster();
-        mon = Randoms(0, monsterData.monsterName.Length);
-        currentMonsterId = mon;
-        monsterName = monsterData.monsterName[mon];
-        switch (mon)
-        {
-            case 1:
-                monsterData.color = MonsterData.Colors.Blue; break;
-            case 2:
-                monsterData.color = MonsterData.Colors.Red; break;
-            case 3:
-                monsterData.color = MonsterData.Colors.White; break;
-        }
-
-        monsterColor = monsterData.color.ToString();
+       
 
 
     }
@@ -50,22 +38,28 @@ public class MosterBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (character.isInAttackRange)
+        if (character.isInAttackRange)      //충돌 하고 있는 애가
         {
-            for (int i = 0; i < 3; i++)
+            if (character.damageTriggered)  //데미지 애니메이션 종료하고
             {
-                if (character.weapon[i])
+                if (monstering[currentMonsterId]==character.weapon[currentMonsterId])
                 {
                     currentHp -= 10; // ← 모든 색상 10 데미지!
-                    
+                    character.damageTriggered = false;
                     if (currentHp <= 0)
                     {
-                        monster[mon].SetActive(false);
+                        monstering[currentMonsterId] = false;
+                        monster[currentMonsterId].SetActive(false);
                         monsterCount--;
                     }
-                    break;
+
+                }
+                else
+                {
+                    character.damageTriggered = false;
                 }
             }
+            
         }
 
         if (monsterCount < 1)
@@ -87,10 +81,18 @@ public class MosterBase : MonoBehaviour
         // 랜덤 몬스터 선택
         mon = Randoms(0, monsterData.monsterName.Length);
         currentMonsterId = mon; // 현재 몬스터 ID 저장
-
+        monstering[currentMonsterId] = true;
         // 데이터 갱신
-        monsterName = monsterData.monsterName[mon];
-        monsterData.color = (MonsterData.Colors)mon;
+        monsterName = monsterData.monsterName[currentMonsterId];
+        switch (currentMonsterId)
+        {
+            case 0:
+                monsterData.color = MonsterData.Colors.Blue; break;
+            case 1:
+                monsterData.color = MonsterData.Colors.Red; break;
+            case 2:
+                monsterData.color = MonsterData.Colors.White; break;
+        }
         monsterColor = monsterData.color.ToString();
 
         // HP 설정
@@ -98,9 +100,9 @@ public class MosterBase : MonoBehaviour
         currentHp = monsterMaxHp;
 
         // 몬스터 활성화
-        monster[mon].transform.position = spawnPoint.position;
-        monster[mon].SetActive(true);
-        monsterCount =1;
+        monster[currentMonsterId].transform.position = spawnPoint.position;
+        monster[currentMonsterId].SetActive(true);
+        monsterCount ++;
 
        
     }
